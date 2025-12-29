@@ -1,0 +1,12 @@
+<resources>
+    <string name="inicio">Home</string>
+    <string name="juegos">Games</string>
+    <string name="mapa">Map</string>
+    <string name="perfil">Profile</string>
+    <string name="esc_ner">Scanner</string>
+    <string name="jugar_otra_vez">PLAY AGAIN</string>
+    <string name="r_cord">RECORD</string>
+    <string name="tiempo">TIME</string>
+    <string name="puntos_0">POINTS</string>
+    <string name="correcto">CORRECT !</string>
+</resources>

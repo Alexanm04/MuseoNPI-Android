@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import com.ugr.npi.museo.databinding.FragmentInventoryBinding
+import java.util.Locale
 
 class InventoryFragment : Fragment() {
 
@@ -29,6 +30,23 @@ class InventoryFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        val lang = Locale.getDefault().language
+
+        // Traducción de textos estáticos
+        binding.tvInventoryTitle.text = when(lang) {
+            "es" -> "Inventario del Museo"
+            "fr" -> "Inventaire du musée"
+            "pt" -> "Inventário do museu"
+            else -> "Museum Inventory"
+        }
+
+        binding.tilSearch.hint = when(lang) {
+            "es" -> "Buscar por nombre o categoría"
+            "fr" -> "Rechercher par nom ou catégorie"
+            "pt" -> "Pesquisar por nome ou categoria"
+            else -> "Search by name or category"
+        }
 
         val jsonString = context?.assets?.open("objetos.json")?.bufferedReader().use { it?.readText() }
         val listType = object : TypeToken<List<MuseoObject>>() {}.type
