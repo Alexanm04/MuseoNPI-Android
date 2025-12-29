@@ -1,0 +1,226 @@
+[
+  {
+    "id": 1,
+    "nombre_es": "Dama de Elche",
+    "nombre_en": "Lady of Elche",
+    "nombre_fr": "Dame d'Elche",
+    "nombre_pt": "Dama de Elche",
+    "categoria_es": "Escultura",
+    "categoria_en": "Sculpture",
+    "categoria_fr": "Sculpture",
+    "categoria_pt": "Escultura",
+    "descripcion_es": "Busto íbero tallado en piedra caliza que data de los siglos V o IV a. C.",
+    "descripcion_en": "Iberian bust carved in limestone dating from the 5th or 4th centuries BC.",
+    "descripcion_fr": "Buste ibérique sculpté dans le calcaire datant du Ve ou IVe siècle av. J.-C.",
+    "descripcion_pt": "Busto ibérico esculpido em calcário datado dos séculos V ou IV a.C.",
+    "imagen": "dama_elche",
+    "info_extra_es": [
+      "La Dama de Elche es una de las piezas más célebres del arte íbero. Su hallazgo fortuito en 1897 por un joven campesino revolucionó la arqueología española.",
+      "Se cree que originalmente estaba policromada y que servía como urna funeraria, ya que tiene una cavidad en la espalda para depositar cenizas.",
+      "Su vestimenta es extremadamente compleja, con grandes rodetes que cubren las orejas y collares de cuentas, reflejando el alto estatus de la mujer representada."
+    ],
+    "info_extra_en": [
+      "The Lady of Elche is one of the most famous pieces of Iberian art. Its accidental discovery in 1897 by a young farmer revolutionized Spanish archaeology.",
+      "It is believed that it was originally polychromed and served as a funerary urn, as it has a cavity in the back to deposit ashes.",
+      "Her clothing is extremely complex, with large coils covering the ears and bead necklaces, reflecting the high status of the woman represented."
+    ],
+    "info_extra_fr": [
+      "La Dame d'Elche est l'une des pièces les plus célèbres de l'art ibérique. Sa découverte fortuite en 1897 par un jeune paysan a révolutionné l'archéologie espagnole.",
+      "On pense qu'elle était à l'origine polychrome et qu'elle servait d'urne funéraire, car elle possède une cavité dans le dos pour y déposer des cendres.",
+      "Ses vêtements sont extrêmement complexes, avec de larges rosettes couvrant les oreilles et des colliers de perles, reflétant le statut élevé de la femme représentée."
+    ],
+    "info_extra_pt": [
+      "A Dama de Elche é uma das peças mais célebres da arte ibérica. A sua descoberta fortuita em 1897 por um jovem camponês revolucionou a arqueologia espanhola.",
+      "Acredita-se que originalmente era policromada e que servia como urna funerária, pois possui uma cavidade nas costas para depositar cinzas.",
+      "O seu traje é extremamente complexo, com grandes rodetes que cobrem as orelhas e colares de contas, refletindo o elevado estatuto da mulher representada."
+    ],
+    "detalles_tecnicos_es": [
+      "Material: Piedra caliza con restos de policromía. Altura: 56 cm.",
+      "Peso: 65,08 kg. Estilo: Ibérico con influencias griegas helenísticas.",
+      "Ubicación actual: Museo Arqueológico Nacional (Madrid). Sala 13."
+    ],
+    "detalles_tecnicos_en": [
+      "Material: Limestone with traces of polychromy. Height: 56 cm.",
+      "Weight: 65.08 kg. Style: Iberian with Hellenistic Greek influences.",
+      "Current location: National Archaeological Museum (Madrid). Room 13."
+    ],
+    "detalles_tecnicos_fr": [
+      "Matériau : Calcaire avec des traces de polychromie. Hauteur : 56 cm.",
+      "Poids : 65,08 kg. Style : Ibérique avec des influences grecques hellénistiques.",
+      "Emplacement actuel : Musée Archéologique National (Madrid). Salle 13."
+    ],
+    "detalles_tecnicos_pt": [
+      "Material: Calcário com restos de policromia. Altura: 56 cm.",
+      "Peso: 65,08 kg. Estilo: Ibérico com influências gregas helenísticas.",
+      "Localização atual: Museu Arqueológico Nacional (Madri). Sala 13."
+    ]
+  },
+  {
+    "id": 2,
+    "nombre_es": "Guernica",
+    "nombre_en": "Guernica",
+    "nombre_fr": "Guernica",
+    "nombre_pt": "Guernica",
+    "categoria_es": "Pintura",
+    "categoria_en": "Painting",
+    "categoria_fr": "Peinture",
+    "categoria_pt": "Pintura",
+    "descripcion_es": "Famoso cuadro de Pablo Picasso que representa el bombardeo de Guernica.",
+    "descripcion_en": "Famous painting by Pablo Picasso representing the bombing of Guernica.",
+    "descripcion_fr": "Célèbre tableau de Pablo Picasso représentant le bombardement de Guernica.",
+    "descripcion_pt": "Famoso quadro de Pablo Picasso que representa o bombardeio de Guernica.",
+    "imagen": "guernica",
+    "info_extra_es": [
+      "Realizado en 1937, el Guernica es un símbolo universal contra la guerra y la violencia irracional.",
+      "Picasso lo pintó para el pabellón español de la Exposición Internacional de París por encargo del Gobierno de la Segunda República.",
+      "La obra utiliza una paleta monocromática de grises, blancos y negros para acentuar el drama y la tragedia de la escena."
+    ],
+    "info_extra_en": [
+      "Created in 1937, Guernica is a universal symbol against war and irrational violence.",
+      "Picasso painted it for the Spanish pavilion at the Paris International Exposition, commissioned by the Government of the Second Republic.",
+      "The work uses a monochromatic palette of grays, whites, and blacks to accentuate the drama and tragedy of the scene."
+    ],
+    "info_extra_fr": [
+      "Réalisé en 1937, Guernica est un symbole universel contre la guerre et la violence irrationnelle.",
+      "Picasso l'a peint pour le pavillon espagnol de l'Exposition internationale de Paris sur commande du gouvernement de la Seconde République.",
+      "L'œuvre utilise une palette monochrome de gris, de blancs et de noirs pour accentuer le drame et la tragédie de la scène."
+    ],
+    "info_extra_pt": [
+      "Realizado em 1937, o Guernica é um símbolo universal contra a guerra e a violência irracional.",
+      "Picasso pintou-o para o pavilhão espanhol da Exposição Internacional de Paris, por encomenda do Governo da Segunda República.",
+      "A obra utiliza uma paleta monocromática de cinzas, brancos e pretos para acentuar o drama e a tragédia da cena."
+    ],
+    "detalles_tecnicos_es": [
+      "Técnica: Óleo sobre lienzo. Dimensiones: 349,3 cm x 776,6 cm.",
+      "Estilo: Cubismo y Expresionismo. Fecha: 1 de mayo - 4 de junio de 1937.",
+      "Ubicación: Museo Nacional Centro de Arte Reina Sofía, Madrid."
+    ],
+    "detalles_tecnicos_en": [
+      "Technique: Oil on canvas. Dimensions: 349.3 cm x 776.6 cm.",
+      "Style: Cubism and Expressionism. Date: May 1 - June 4, 1937.",
+      "Location: Museo Nacional Centro de Arte Reina Sofía, Madrid."
+    ],
+    "detalles_tecnicos_fr": [
+      "Technique : Huile sur toile. Dimensions : 349,3 cm x 776,6 cm.",
+      "Style : Cubisme et Expressionnisme. Date : 1er mai - 4 juin 1937.",
+      "Emplacement : Musée national centre d'art Reina Sofía, Madrid."
+    ],
+    "detalles_tecnicos_pt": [
+      "Técnica: Óleo sobre tela. Dimensões: 349,3 cm x 776,6 cm.",
+      "Estilo: Cubismo e Expressionismo. Data: 1 de maio - 4 de junho de 1937.",
+      "Localização: Museu Nacional Centro de Arte Reina Sofia, Madri."
+    ]
+  },
+  {
+    "id": 3,
+    "nombre_es": "Espada Tizona",
+    "nombre_en": "Tizona Sword",
+    "nombre_fr": "Épée Tizona",
+    "nombre_pt": "Espada Tizona",
+    "categoria_es": "Armamento",
+    "categoria_en": "Weaponry",
+    "categoria_fr": "Armement",
+    "categoria_pt": "Armamento",
+    "descripcion_es": "Una de las espadas que la tradición atribuye al Cid Campeador.",
+    "descripcion_en": "One of the swords traditionally attributed to El Cid Campeador.",
+    "descripcion_fr": "L'une des épées que la tradition attribue au Cid Campeador.",
+    "descripcion_pt": "Uma das espadas que a tradição atribui ao Cid Campeador.",
+    "imagen": "tizona",
+    "info_extra_es": [
+      "La Tizona es legendaria por ser la espada con la que Rodrigo Díaz de Vivar, el Cid, atemorizaba a sus enemigos en el campo de batalla.",
+      "Según el 'Cantar de mio Cid', su sola presencia hacía flaquear a los guerreros más valientes de las tropas contrarias.",
+      "Es un símbolo fundamental de la Reconquista y de los valores de la caballería medieval española."
+    ],
+    "info_extra_en": [
+      "The Tizona is legendary for being the sword with which Rodrigo Díaz de Vivar, El Cid, terrified his enemies on the battlefield.",
+      "According to the 'Cantar de mio Cid', its mere presence made the bravest warriors of the opposing troops falter.",
+      "It is a fundamental symbol of the Reconquista and the values of medieval Spanish chivalry."
+    ],
+    "info_extra_fr": [
+      "La Tizona est légendaire car c'est l'épée avec laquelle Rodrigo Díaz de Vivar, le Cid, terrorisait ses ennemis sur le champ de bataille.",
+      "Selon le 'Cantar de mio Cid', sa seule présence faisait faiblir les guerriers les plus courageux des troupes adverses.",
+      "C'est un symbole fondamental de la Reconquista et des valeurs de la chevalerie médiévale espagnole."
+    ],
+    "info_extra_pt": [
+      "A Tizona é lendária por ser a espada com a qual Rodrigo Díaz de Vivar, o Cid, amedrontava os seus inimigos no campo de batalha.",
+      "Segundo o 'Cantar de mio Cid', a sua mera presença fazia fraquejar os guerreiros mais corajosos das tropas contrárias.",
+      "É um símbolo fundamental da Reconquista e dos valores da cavalaria medieval espanhola."
+    ],
+    "detalles_tecnicos_es": [
+      "Material: Acero de Damasco. Longitud total: 103 cm. Peso: 1100 g.",
+      "Datación: Hoja del siglo XI, empuñadura del siglo XV.",
+      "Inscripciones: Presenta grabados en latín en ambas caras de la hoja."
+    ],
+    "detalles_tecnicos_en": [
+      "Material: Damascus steel. Total length: 103 cm. Weight: 1100 g.",
+      "Dating: 11th-century blade, 15th-century hilt.",
+      "Inscriptions: Features Latin engravings on both sides of the blade."
+    ],
+    "detalles_tecnicos_fr": [
+      "Matériau : Acier de Damas. Longueur totale : 103 cm. Poids : 1100 g.",
+      "Datation : Lame du XIe siècle, poignée du XVe siècle.",
+      "Inscriptions : Présente des gravures en latin sur les deux faces de la lame."
+    ],
+    "detalles_tecnicos_pt": [
+      "Material: Aço de Damasco. Comprimento total: 103 cm. Peso: 1100 g.",
+      "Datação: Lâmina do século XI, punho do século XV.",
+      "Inscrições: Apresenta gravuras em latim em ambas as faces da lâmina."
+    ]
+  },
+  {
+    "id": 4,
+    "nombre_es": "Tesoro de Guarrazar",
+    "nombre_en": "Guarrazar Treasure",
+    "nombre_fr": "Trésor de Guarrazar",
+    "nombre_pt": "Tesouro de Guarrazar",
+    "categoria_es": "Orfebrería",
+    "categoria_en": "Goldsmithing",
+    "categoria_fr": "Orfèvrerie",
+    "categoria_pt": "Ourivesaria",
+    "descripcion_es": "Conjunto de coronas y cruces de oro de la época visigoda.",
+    "descripcion_en": "A set of gold crowns and crosses from the Visigothic era.",
+    "descripcion_fr": "Un ensemble de couronnes et de croix en or de l'époque wisigothique.",
+    "descripcion_pt": "Um conjunto de coroas e cruzes de ouro da era visigótica.",
+    "imagen": "guarrazar",
+    "info_extra_es": [
+      "Este tesoro es la muestra más espectacular de la orfebrería visigoda en España, hallado en una huerta de Toledo en 1858.",
+      "Fue enterrado por clérigos ante la inminente invasión musulmana para evitar que fuera saqueado por las tropas invasoras.",
+      "Destaca la corona de Recesvinto, que tiene letras colgantes de oro formando el nombre del rey que la donó a la iglesia."
+    ],
+    "info_extra_en": [
+      "This treasure is the most spectacular example of Visigothic goldsmithing in Spain, found in an orchard in Toledo in 1858.",
+      "It was buried by clerics before the imminent Muslim invasion to prevent it from being looted by the invading troops.",
+      "The crown of Recceswinth stands out, featuring hanging gold letters forming the name of the king who donated it to the church."
+    ],
+    "info_extra_fr": [
+      "Ce trésor est l'exemple le plus spectaculaire de l'orfèvrerie wisigothique en Espagne, trouvé dans un verger à Tolède en 1858.",
+      "Il a été enterré par des clercs avant l'imminente invasion musulmane pour éviter qu'il ne soit pillé par les troupes envahissantes.",
+      "La couronne de Réceswinthe se distingue, avec des lettres en or pendantes formant le nom du roi qui l'a offerte à l'église."
+    ],
+    "info_extra_pt": [
+      "Este tesouro é o exemplo mais espetacular da ourivesaria visigótica em Espanha, encontrado num pomar em Toledo em 1858.",
+      "Foi enterrado por clérigos perante a iminente invasão muçulmana para evitar que fosse saqueado pelas tropas invasoras.",
+      "Destaca-se a coroa de Recesvinto, que tem letras de ouro penduradas formando o nome do rei que a doou à igreja."
+    ],
+    "detalles_tecnicos_es": [
+      "Material: Oro fino, zafiros, granates y perlas. Técnica: Alveolado y repujado.",
+      "Datación: Siglo VII. Época de los reyes Suintila y Recesvinto.",
+      "Ubicación: Repartido entre el MAN (Madrid), Armería Real y Museo de Cluny (París)."
+    ],
+    "detalles_tecnicos_en": [
+      "Material: Fine gold, sapphires, garnets, and pearls. Technique: Cloisonné and repoussé.",
+      "Dating: 7th century. Era of kings Swinthila and Recceswinth.",
+      "Location: Divided between the MAN (Madrid), Royal Armory, and Cluny Museum (Paris)."
+    ],
+    "detalles_tecnicos_fr": [
+      "Matériau : Or fin, saphirs, grenats et perles. Technique : Cloisonné et repoussé.",
+      "Datation : VIIe siècle. Époque des rois Swinthila et Réceswinthe.",
+      "Emplacement : Réparti entre le MAN (Madrid), l'Armurerie royale et le musée de Cluny (Paris)."
+    ],
+    "detalles_tecnicos_pt": [
+      "Material: Ouro fino, safiras, granadas e pérolas. Técnica: Alveolado e repuxado.",
+      "Datação: Século VII. Época dos reis Suintila e Recesvinto.",
+      "Localização: Dividido entre o MAN (Madri), Armaria Real e Museu de Cluny (Paris)."
+    ]
+  }
+]

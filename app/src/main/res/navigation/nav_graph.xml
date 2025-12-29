@@ -29,10 +29,32 @@
         android:id="@+id/scannerFragment"
         android:name="com.ugr.npi.museo.ScannerFragment"
         android:label="fragment_scanner"
-        tools:layout="@layout/fragment_scanner" />
+        tools:layout="@layout/fragment_scanner">
+        <action
+            android:id="@+id/action_scannerFragment_to_inventoryFragment"
+            app:destination="@id/inventoryFragment" />
+    </fragment>
     <activity
         android:id="@+id/mainActivity"
         android:name="com.ugr.npi.museo.MainActivity"
         android:label="activity_main"
         tools:layout="@layout/activity_main" />
+    <fragment
+        android:id="@+id/inventoryFragment"
+        android:name="com.ugr.npi.museo.InventoryFragment"
+        android:label="InventoryFragment"
+        tools:layout="@layout/fragment_inventory">
+        <action
+            android:id="@+id/action_inventoryFragment_to_objectDetailFragment"
+            app:destination="@id/objectDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/objectDetailFragment"
+        android:name="com.ugr.npi.museo.ObjectDetailFragment"
+        android:label="ObjectDetailFragment"
+        tools:layout="@layout/fragment_object_detail">
+        <argument
+            android:name="museoObject"
+            app:argType="com.ugr.npi.museo.MuseoObject" />
+    </fragment>
 </navigation>
