@@ -33,6 +33,7 @@
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
                 android:padding="8dp"
+                android:contentDescription="@string/imagen_del_objeto"
                 tools:src="@tools:sample/backgrounds/scenic" />
         </com.google.android.material.card.MaterialCardView>
 

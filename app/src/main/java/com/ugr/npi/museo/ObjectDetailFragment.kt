@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
+import androidx.core.os.BundleCompat
 import androidx.fragment.app.Fragment
 import com.google.android.material.button.MaterialButton
 import com.ugr.npi.museo.databinding.FragmentObjectDetailBinding
@@ -29,22 +30,19 @@ class ObjectDetailFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val museoObject = arguments?.getParcelable<MuseoObject>("museoObject")
+        val museoObject = arguments?.let {
+            BundleCompat.getParcelable(it, "museoObject", MuseoObject::class.java)
+        }
         val lang = Locale.getDefault().language
         
         museoObject?.let { obj ->
             binding.tvDetailName.text = obj.getNombre()
             
-            val categoryLabel = when(lang) {
-                "es" -> "Categoría: "
-                "fr" -> "Catégorie : "
-                "pt" -> "Categoria: "
-                else -> "Category: "
-            }
-            binding.tvDetailCategory.text = categoryLabel + obj.getCategoria()
+            // Corrección: Usar strings con placeholders en lugar de concatenar
+            binding.tvDetailCategory.text = getString(R.string.categoria_label, obj.getCategoria())
             binding.tvDetailDescription.text = obj.getDescripcion()
 
-            // Carga de imagen desde Assets con soporte para múltiples formatos
+            // Carga de imagen desde Assets
             val context = requireContext()
             val extensions = listOf(".webp", ".png", ".jpg", ".jpeg")
             var loaded = false
@@ -56,8 +54,8 @@ class ObjectDetailFragment : Fragment() {
                     binding.ivDetailImage.setImageDrawable(drawable)
                     loaded = true
                     break
-                } catch (e: Exception) {
-                    // Probar siguiente extensión
+                } catch (ignored: Exception) {
+                    // Ignorado: Probar siguiente extensión
                 }
             }
 
@@ -65,38 +63,16 @@ class ObjectDetailFragment : Fragment() {
                 binding.ivDetailImage.setImageResource(android.R.drawable.ic_menu_gallery)
             }
 
-            binding.btnLearnMore.text = when(lang) {
-                "es" -> "Aprender más sobre esta obra"
-                "fr" -> "En savoir plus sur cette œuvre"
-                "pt" -> "Saiba mais sobre esta obra"
-                else -> "Learn more about this work"
-            }
-            
-            binding.btnTechnicalDetails.text = when(lang) {
-                "es" -> "Detalles técnicos"
-                "fr" -> "Détails techniques"
-                "pt" -> "Detalhes técnicos"
-                else -> "Technical details"
-            }
+            // Usar strings de recursos para los botones
+            binding.btnLearnMore.setText(R.string.aprender_mas_obra)
+            binding.btnTechnicalDetails.setText(R.string.detalles_tecnicos_label)
 
             binding.btnLearnMore.setOnClickListener {
-                val title = when(lang) {
-                    "es" -> "Aprender más sobre la obra"
-                    "fr" -> "En savoir plus sur l'œuvre"
-                    "pt" -> "Saiba mais sobre a obra"
-                    else -> "Learn more about the work"
-                }
-                showIterativePopup(title, obj.getInfoExtra())
+                showIterativePopup(getString(R.string.aprender_mas_titulo), obj.getInfoExtra())
             }
 
             binding.btnTechnicalDetails.setOnClickListener {
-                val title = when(lang) {
-                    "es" -> "Detalles técnicos"
-                    "fr" -> "Détails techniques"
-                    "pt" -> "Detalhes técnicos"
-                    else -> "Technical details"
-                }
-                showIterativePopup(title, obj.getDetallesTecnicos())
+                showIterativePopup(getString(R.string.detalles_tecnicos_label), obj.getDetallesTecnicos())
             }
         }
     }
@@ -104,7 +80,6 @@ class ObjectDetailFragment : Fragment() {
     private fun showIterativePopup(title: String, infoList: List<String>) {
         if (infoList.isEmpty()) return
 
-        val lang = Locale.getDefault().language
         var currentIndex = 0
         val dialogView = LayoutInflater.from(context).inflate(R.layout.dialog_info, null)
         val tvTitle = dialogView.findViewById<TextView>(R.id.tvDialogTitle)
@@ -123,12 +98,7 @@ class ObjectDetailFragment : Fragment() {
             btnMore.visibility = View.GONE
         } else {
             btnMore.visibility = View.VISIBLE
-            btnMore.text = when(lang) {
-                "es" -> "Mostrar más información"
-                "fr" -> "Afficher plus d'informations"
-                "pt" -> "Mostrar mais informações"
-                else -> "Show more information"
-            }
+            btnMore.setText(R.string.mostrar_mas_info)
         }
 
         btnMore.setOnClickListener {
@@ -141,12 +111,7 @@ class ObjectDetailFragment : Fragment() {
             }
         }
 
-        btnClose.text = when(lang) {
-            "es" -> "Cerrar"
-            "fr" -> "Fermer"
-            "pt" -> "Fechar"
-            else -> "Close"
-        }
+        btnClose.setText(R.string.cerrar)
         btnClose.setOnClickListener { dialog.dismiss() }
         
         dialog.show()

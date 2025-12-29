@@ -9,4 +9,11 @@
     <string name="tiempo">TIME</string>
     <string name="puntos_0">POINTS</string>
     <string name="correcto">CORRECT !</string>
+    <string name="imagen_del_objeto">Representative image of the museum object</string>
+    <string name="categoria_label">Category: %1$s</string>
+    <string name="aprender_mas_obra">Learn more about this work</string>
+    <string name="detalles_tecnicos_label">Technical details</string>
+    <string name="aprender_mas_titulo">Learn more about the work</string>
+    <string name="mostrar_mas_info">Show more information</string>
+    <string name="cerrar">Close</string>
 </resources>

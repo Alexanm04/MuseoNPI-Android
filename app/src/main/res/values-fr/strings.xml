@@ -9,4 +9,5 @@
     <string name="tiempo">TEMPS</string>
     <string name="puntos_0">POINTS</string>
     <string name="correcto">CORRECT !</string>
+    <string name="imagen_del_objeto">Image représentative de l\'objet du musée</string>
 </resources>
