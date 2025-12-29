@@ -1,5 +1,6 @@
 package com.ugr.npi.museo
 
+import android.graphics.drawable.Drawable
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -9,6 +10,7 @@ import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.Fragment
 import com.google.android.material.button.MaterialButton
 import com.ugr.npi.museo.databinding.FragmentObjectDetailBinding
+import java.io.InputStream
 import java.util.Locale
 
 class ObjectDetailFragment : Fragment() {
@@ -42,15 +44,27 @@ class ObjectDetailFragment : Fragment() {
             binding.tvDetailCategory.text = categoryLabel + obj.getCategoria()
             binding.tvDetailDescription.text = obj.getDescripcion()
 
+            // Carga de imagen desde Assets con soporte para múltiples formatos
             val context = requireContext()
-            val imageResId = context.resources.getIdentifier(obj.imagen, "drawable", context.packageName)
-            if (imageResId != 0) {
-                binding.ivDetailImage.setImageResource(imageResId)
-            } else {
+            val extensions = listOf(".webp", ".png", ".jpg", ".jpeg")
+            var loaded = false
+
+            for (ext in extensions) {
+                try {
+                    val inputStream: InputStream = context.assets.open("${obj.imagen}$ext")
+                    val drawable = Drawable.createFromStream(inputStream, null)
+                    binding.ivDetailImage.setImageDrawable(drawable)
+                    loaded = true
+                    break
+                } catch (e: Exception) {
+                    // Probar siguiente extensión
+                }
+            }
+
+            if (!loaded) {
                 binding.ivDetailImage.setImageResource(android.R.drawable.ic_menu_gallery)
             }
 
-            // Traducir textos de botones
             binding.btnLearnMore.text = when(lang) {
                 "es" -> "Aprender más sobre esta obra"
                 "fr" -> "En savoir plus sur cette œuvre"

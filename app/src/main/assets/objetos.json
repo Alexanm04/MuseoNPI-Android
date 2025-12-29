@@ -1,226 +1,786 @@
 [
   {
     "id": 1,
-    "nombre_es": "Dama de Elche",
-    "nombre_en": "Lady of Elche",
-    "nombre_fr": "Dame d'Elche",
-    "nombre_pt": "Dama de Elche",
-    "categoria_es": "Escultura",
-    "categoria_en": "Sculpture",
-    "categoria_fr": "Sculpture",
-    "categoria_pt": "Escultura",
-    "descripcion_es": "Busto íbero tallado en piedra caliza que data de los siglos V o IV a. C.",
-    "descripcion_en": "Iberian bust carved in limestone dating from the 5th or 4th centuries BC.",
-    "descripcion_fr": "Buste ibérique sculpté dans le calcaire datant du Ve ou IVe siècle av. J.-C.",
-    "descripcion_pt": "Busto ibérico esculpido em calcário datado dos séculos V ou IV a.C.",
-    "imagen": "dama_elche",
+    "nombre_es": "Anubis",
+    "nombre_en": "Anubis",
+    "nombre_fr": "Anubis",
+    "nombre_pt": "Anúbis",
+    "categoria_es": "Deidad funeraria",
+    "categoria_en": "Funerary deity",
+    "categoria_fr": "Divinité funéraire",
+    "categoria_pt": "Divindade funerária",
+    "descripcion_es": "Representación del dios con cabeza de chacal, guardián de las necrópolis y patrón de la momificación.",
+    "descripcion_en": "Representation of the jackal-headed god, guardian of the necropolis and patron of mummification.",
+    "descripcion_fr": "Représentation du dieu à tête de chacal, gardien des nécropoles et patron de la momification.",
+    "descripcion_pt": "Representação do deus com cabeça de chacal, guardião das necrópoles e patrono da mumificação.",
+    "imagen": "images/dioses/anubisinframundo",
     "info_extra_es": [
-      "La Dama de Elche es una de las piezas más célebres del arte íbero. Su hallazgo fortuito en 1897 por un joven campesino revolucionó la arqueología española.",
-      "Se cree que originalmente estaba policromada y que servía como urna funeraria, ya que tiene una cavidad en la espalda para depositar cenizas.",
-      "Su vestimenta es extremadamente compleja, con grandes rodetes que cubren las orejas y collares de cuentas, reflejando el alto estatus de la mujer representada."
+      "Anubis presidía las ceremonias de apertura de la boca y el pesaje del corazón (Psicostasia).",
+      "Su color negro simboliza el renacimiento y el limo fértil del Nilo, no la muerte en sentido negativo.",
+      "Es una de las deidades más antiguas, presente desde las primeras dinastías del Egipto faraónico."
     ],
     "info_extra_en": [
-      "The Lady of Elche is one of the most famous pieces of Iberian art. Its accidental discovery in 1897 by a young farmer revolutionized Spanish archaeology.",
-      "It is believed that it was originally polychromed and served as a funerary urn, as it has a cavity in the back to deposit ashes.",
-      "Her clothing is extremely complex, with large coils covering the ears and bead necklaces, reflecting the high status of the woman represented."
+      "Anubis presided over the opening of the mouth ceremonies and the weighing of the heart (Psychostasia).",
+      "His black color symbolizes rebirth and the fertile silt of the Nile, not death in a negative sense.",
+      "He is one of the oldest deities, present since the earliest dynasties of Pharaonic Egypt."
     ],
     "info_extra_fr": [
-      "La Dame d'Elche est l'une des pièces les plus célèbres de l'art ibérique. Sa découverte fortuite en 1897 par un jeune paysan a révolutionné l'archéologie espagnole.",
-      "On pense qu'elle était à l'origine polychrome et qu'elle servait d'urne funéraire, car elle possède une cavité dans le dos pour y déposer des cendres.",
-      "Ses vêtements sont extrêmement complexes, avec de larges rosettes couvrant les oreilles et des colliers de perles, reflétant le statut élevé de la femme représentée."
+      "Anubis présidait les cérémonies d'ouverture de la bouche et la pesée du cœur (Psychostasie).",
+      "Sa couleur noire symbolise la renaissance et le limon fertile du Nil, pas la mort au sens négatif.",
+      "C'est l'une des divinités les plus anciennes, présente dès les premières dynasties de l'Égypte pharaonique."
     ],
     "info_extra_pt": [
-      "A Dama de Elche é uma das peças mais célebres da arte ibérica. A sua descoberta fortuita em 1897 por um jovem camponês revolucionou a arqueologia espanhola.",
-      "Acredita-se que originalmente era policromada e que servia como urna funerária, pois possui uma cavidade nas costas para depositar cinzas.",
-      "O seu traje é extremamente complexo, com grandes rodetes que cobrem as orelhas e colares de contas, refletindo o elevado estatuto da mulher representada."
+      "Anúbis presidia as cerimônias de abertura da boca e a pesagem do coração (Psicostasia).",
+      "Sua cor preta simboliza o renascimento e o limo fértil do Nilo, não a morte em sentido negativo.",
+      "É uma das divindades mais antigas, presente desde as primeiras dinastias do Egito faraônico."
     ],
     "detalles_tecnicos_es": [
-      "Material: Piedra caliza con restos de policromía. Altura: 56 cm.",
-      "Peso: 65,08 kg. Estilo: Ibérico con influencias griegas helenísticas.",
-      "Ubicación actual: Museo Arqueológico Nacional (Madrid). Sala 13."
+      "Material: Piedra tallada. Época: Imperio Nuevo.",
+      "Temática: Muerte y trascendencia.",
+      "Ubicación: Sala 2 - Dioses Funerarios. Pieza destacada."
     ],
     "detalles_tecnicos_en": [
-      "Material: Limestone with traces of polychromy. Height: 56 cm.",
-      "Weight: 65.08 kg. Style: Iberian with Hellenistic Greek influences.",
-      "Current location: National Archaeological Museum (Madrid). Room 13."
+      "Material: Carved stone. Era: New Kingdom.",
+      "Theme: Death and transcendence.",
+      "Location: Room 2 - Funerary Gods. Featured piece."
     ],
     "detalles_tecnicos_fr": [
-      "Matériau : Calcaire avec des traces de polychromie. Hauteur : 56 cm.",
-      "Poids : 65,08 kg. Style : Ibérique avec des influences grecques hellénistiques.",
-      "Emplacement actuel : Musée Archéologique National (Madrid). Salle 13."
+      "Matériau : Pierre taillée. Époque : Nouvel Empire.",
+      "Thématique : Mort et transcendance.",
+      "Emplacement : Salle 2 - Dieux Funéraires. Pièce maîtresse."
     ],
     "detalles_tecnicos_pt": [
-      "Material: Calcário com restos de policromia. Altura: 56 cm.",
-      "Peso: 65,08 kg. Estilo: Ibérico com influências gregas helenísticas.",
-      "Localização atual: Museu Arqueológico Nacional (Madri). Sala 13."
+      "Material: Pedra entalhada. Época: Império Novo.",
+      "Temática: Morte e transcendência.",
+      "Localização: Sala 2 - Deuses Funerários. Peça de destaque."
     ]
   },
   {
     "id": 2,
-    "nombre_es": "Guernica",
-    "nombre_en": "Guernica",
-    "nombre_fr": "Guernica",
-    "nombre_pt": "Guernica",
-    "categoria_es": "Pintura",
-    "categoria_en": "Painting",
-    "categoria_fr": "Peinture",
-    "categoria_pt": "Pintura",
-    "descripcion_es": "Famoso cuadro de Pablo Picasso que representa el bombardeo de Guernica.",
-    "descripcion_en": "Famous painting by Pablo Picasso representing the bombing of Guernica.",
-    "descripcion_fr": "Célèbre tableau de Pablo Picasso représentant le bombardement de Guernica.",
-    "descripcion_pt": "Famoso quadro de Pablo Picasso que representa o bombardeio de Guernica.",
-    "imagen": "guernica",
+    "nombre_es": "Máscara de Tutankamón",
+    "nombre_en": "Tutankhamun's Mask",
+    "nombre_fr": "Masque de Toutânkhamon",
+    "nombre_pt": "Máscara de Tutancâmon",
+    "categoria_es": "Ajuar funerario",
+    "categoria_en": "Funerary goods",
+    "categoria_fr": "Mobilier funéraire",
+    "categoria_pt": "Tesouro funerário",
+    "descripcion_es": "Máscara funeraria de oro macizo que cubría el rostro de la momia del joven faraón.",
+    "descripcion_en": "Solid gold funerary mask that covered the face of the young pharaoh's mummy.",
+    "descripcion_fr": "Masque funéraire en or massif qui couvrait le visage de la momie du jeune pharaon.",
+    "descripcion_pt": "Máscara funerária de ouro maciço que cobria o rosto da múmia do jovem faraó.",
+    "imagen": "images/faraones/tutankamon",
     "info_extra_es": [
-      "Realizado en 1937, el Guernica es un símbolo universal contra la guerra y la violencia irracional.",
-      "Picasso lo pintó para el pabellón español de la Exposición Internacional de París por encargo del Gobierno de la Segunda República.",
-      "La obra utiliza una paleta monocromática de grises, blancos y negros para acentuar el drama y la tragedia de la escena."
+      "Descubierta por Howard Carter en 1922, es considerada la obra de arte más famosa del antiguo Egipto.",
+      "Está fabricada con 11 kg de oro puro e incrustaciones de lapislázuli, cornalina y obsidiana.",
+      "En la parte posterior lleva grabado el capítulo 151B del Libro de los Muertos."
     ],
     "info_extra_en": [
-      "Created in 1937, Guernica is a universal symbol against war and irrational violence.",
-      "Picasso painted it for the Spanish pavilion at the Paris International Exposition, commissioned by the Government of the Second Republic.",
-      "The work uses a monochromatic palette of grays, whites, and blacks to accentuate the drama and tragedy of the scene."
+      "Discovered by Howard Carter in 1922, it is considered the most famous work of art from ancient Egypt.",
+      "It is made of 11 kg of pure gold with inlays of lapis lazuli, carnelian, and obsidian.",
+      "The back is engraved with Chapter 151B of the Book of the Dead."
     ],
     "info_extra_fr": [
-      "Réalisé en 1937, Guernica est un symbole universel contre la guerre et la violence irrationnelle.",
-      "Picasso l'a peint pour le pavillon espagnol de l'Exposition internationale de Paris sur commande du gouvernement de la Seconde République.",
-      "L'œuvre utilise une palette monochrome de gris, de blancs et de noirs pour accentuer le drame et la tragédie de la scène."
+      "Découvert par Howard Carter en 1922, il est considéré comme l'œuvre d'art la plus célèbre de l'Égypte ancienne.",
+      "Il est fabriqué avec 11 kg d'or pur et des incrustations de lapis-lazuli, de cornaline et d'obsidienne.",
+      "Au dos est gravé le chapitre 151B du Livre des Morts."
     ],
     "info_extra_pt": [
-      "Realizado em 1937, o Guernica é um símbolo universal contra a guerra e a violência irracional.",
-      "Picasso pintou-o para o pavilhão espanhol da Exposição Internacional de Paris, por encomenda do Governo da Segunda República.",
-      "A obra utiliza uma paleta monocromática de cinzas, brancos e pretos para acentuar o drama e a tragédia da cena."
+      "Descoberta por Howard Carter em 1922, é considerada a obra de arte mais famosa do antigo Egito.",
+      "É feita com 11 kg de ouro puro e incrustações de lápis-lazúli, cornalina e obsidiana.",
+      "Na parte posterior está gravado o capítulo 151B do Livro dos Mortos."
     ],
     "detalles_tecnicos_es": [
-      "Técnica: Óleo sobre lienzo. Dimensiones: 349,3 cm x 776,6 cm.",
-      "Estilo: Cubismo y Expresionismo. Fecha: 1 de mayo - 4 de junio de 1937.",
-      "Ubicación: Museo Nacional Centro de Arte Reina Sofía, Madrid."
+      "Material: Oro y piedras semipreciosas. Época: Dinastía XVIII (Imperio Nuevo).",
+      "Altura: 54 cm. Peso: 11 kg.",
+      "Ubicación: Sala 1 - Faraones. Pieza destacada."
     ],
     "detalles_tecnicos_en": [
-      "Technique: Oil on canvas. Dimensions: 349.3 cm x 776.6 cm.",
-      "Style: Cubism and Expressionism. Date: May 1 - June 4, 1937.",
-      "Location: Museo Nacional Centro de Arte Reina Sofía, Madrid."
+      "Material: Gold and semi-precious stones. Era: 18th Dynasty (New Kingdom).",
+      "Height: 54 cm. Weight: 11 kg.",
+      "Location: Room 1 - Pharaohs. Featured piece."
     ],
     "detalles_tecnicos_fr": [
-      "Technique : Huile sur toile. Dimensions : 349,3 cm x 776,6 cm.",
-      "Style : Cubisme et Expressionnisme. Date : 1er mai - 4 juin 1937.",
-      "Emplacement : Musée national centre d'art Reina Sofía, Madrid."
+      "Matériau : Or et pierres semi-précieuses. Époque : XVIIIe dynastie (Nouvel Empire).",
+      "Hauteur : 54 cm. Poids : 11 kg.",
+      "Emplacement : Salle 1 - Pharaons. Pièce maîtresse."
     ],
     "detalles_tecnicos_pt": [
-      "Técnica: Óleo sobre tela. Dimensões: 349,3 cm x 776,6 cm.",
-      "Estilo: Cubismo e Expressionismo. Data: 1 de maio - 4 de junho de 1937.",
-      "Localização: Museu Nacional Centro de Arte Reina Sofia, Madri."
+      "Material: Ouro e pedras semipreciosas. Época: XVIII Dinastia (Império Novo).",
+      "Altura: 54 cm. Peso: 11 kg.",
+      "Localização: Sala 1 - Faraós. Peça de destaque."
     ]
   },
   {
     "id": 3,
-    "nombre_es": "Espada Tizona",
-    "nombre_en": "Tizona Sword",
-    "nombre_fr": "Épée Tizona",
-    "nombre_pt": "Espada Tizona",
-    "categoria_es": "Armamento",
-    "categoria_en": "Weaponry",
-    "categoria_fr": "Armement",
-    "categoria_pt": "Armamento",
-    "descripcion_es": "Una de las espadas que la tradición atribuye al Cid Campeador.",
-    "descripcion_en": "One of the swords traditionally attributed to El Cid Campeador.",
-    "descripcion_fr": "L'une des épées que la tradition attribue au Cid Campeador.",
-    "descripcion_pt": "Uma das espadas que a tradição atribui ao Cid Campeador.",
-    "imagen": "tizona",
+    "nombre_es": "Pirámide de Keops",
+    "nombre_en": "Great Pyramid of Giza (Khufu)",
+    "nombre_fr": "Pyramide de Khéops",
+    "nombre_pt": "Pirâmide de Quéops",
+    "categoria_es": "Pirámide",
+    "categoria_en": "Pyramid",
+    "categoria_fr": "Pyramide",
+    "categoria_pt": "Pirâmide",
+    "descripcion_es": "La mayor de las pirámides de Giza y la única de las siete maravillas del mundo antiguo que perdura.",
+    "descripcion_en": "The largest of the Giza pyramids and the only one of the seven wonders of the ancient world still standing.",
+    "descripcion_fr": "La plus grande des pyramides de Gizeh et la seule des sept merveilles du monde antique à subsister.",
+    "descripcion_pt": "A maior das pirâmides de Gizé e a única das sete maravilhas do mundo antigo que ainda resta.",
+    "imagen": "images/piramides/piramidekeops",
     "info_extra_es": [
-      "La Tizona es legendaria por ser la espada con la que Rodrigo Díaz de Vivar, el Cid, atemorizaba a sus enemigos en el campo de batalla.",
-      "Según el 'Cantar de mio Cid', su sola presencia hacía flaquear a los guerreros más valientes de las tropas contrarias.",
-      "Es un símbolo fundamental de la Reconquista y de los valores de la caballería medieval española."
+      "Originalmente estaba cubierta por bloques de piedra caliza blanca pulida que reflejaban la luz del sol.",
+      "Se estima que se utilizaron 2.3 millones de bloques de piedra en su construcción.",
+      "Fue la estructura más alta hecha por el hombre durante más de 3,800 años."
     ],
     "info_extra_en": [
-      "The Tizona is legendary for being the sword with which Rodrigo Díaz de Vivar, El Cid, terrified his enemies on the battlefield.",
-      "According to the 'Cantar de mio Cid', its mere presence made the bravest warriors of the opposing troops falter.",
-      "It is a fundamental symbol of the Reconquista and the values of medieval Spanish chivalry."
+      "It was originally covered by polished white limestone casing stones that reflected sunlight.",
+      "An estimated 2.3 million stone blocks were used in its construction.",
+      "It was the tallest man-made structure in the world for more than 3,800 years."
     ],
     "info_extra_fr": [
-      "La Tizona est légendaire car c'est l'épée avec laquelle Rodrigo Díaz de Vivar, le Cid, terrorisait ses ennemis sur le champ de bataille.",
-      "Selon le 'Cantar de mio Cid', sa seule présence faisait faiblir les guerriers les plus courageux des troupes adverses.",
-      "C'est un symbole fondamental de la Reconquista et des valeurs de la chevalerie médiévale espagnole."
+      "Elle était à l'origine recouverte de blocs de calcaire blanc poli qui reflétaient la lumière du soleil.",
+      "On estime que 2,3 millions de blocs de pierre ont été utilisés pour sa construction.",
+      "Elle est restée la plus haute structure humaine pendant plus de 3 800 ans."
     ],
     "info_extra_pt": [
-      "A Tizona é lendária por ser a espada com a qual Rodrigo Díaz de Vivar, o Cid, amedrontava os seus inimigos no campo de batalha.",
-      "Segundo o 'Cantar de mio Cid', a sua mera presença fazia fraquejar os guerreiros mais corajosos das tropas contrárias.",
-      "É um símbolo fundamental da Reconquista e dos valores da cavalaria medieval espanhola."
+      "Originalmente estava coberta por blocos de calcário branco polido que refletiam a luz do sol.",
+      "Estima-se que foram utilizados 2,3 milhões de blocos de pedra em sua construção.",
+      "Foi a estrutura mais alta feita pelo homem por mais de 3.800 anos."
     ],
     "detalles_tecnicos_es": [
-      "Material: Acero de Damasco. Longitud total: 103 cm. Peso: 1100 g.",
-      "Datación: Hoja del siglo XI, empuñadura del siglo XV.",
-      "Inscripciones: Presenta grabados en latín en ambas caras de la hoja."
+      "Material: Piedra caliza y granito. Época: Imperio Antiguo (Dinastía IV).",
+      "Dimensiones: Altura original 146.6 m. Base: 230 m.",
+      "Ubicación: Meseta de Giza (Representada en Sala 5)."
     ],
     "detalles_tecnicos_en": [
-      "Material: Damascus steel. Total length: 103 cm. Weight: 1100 g.",
-      "Dating: 11th-century blade, 15th-century hilt.",
-      "Inscriptions: Features Latin engravings on both sides of the blade."
+      "Material: Limestone and granite. Era: Old Kingdom (4th Dynasty).",
+      "Dimensions: Original height 146.6 m. Base: 230 m.",
+      "Location: Giza Plateau (Represented in Room 5)."
     ],
     "detalles_tecnicos_fr": [
-      "Matériau : Acier de Damas. Longueur totale : 103 cm. Poids : 1100 g.",
-      "Datation : Lame du XIe siècle, poignée du XVe siècle.",
-      "Inscriptions : Présente des gravures en latin sur les deux faces de la lame."
+      "Matériau : Calcaire et granit. Époque : Ancien Empire (IVe dynastie).",
+      "Dimensions : Hauteur d'origine 146,6 m. Base : 230 m.",
+      "Emplacement : Plateau de Gizeh (Représentée en Salle 5)."
     ],
     "detalles_tecnicos_pt": [
-      "Material: Aço de Damasco. Comprimento total: 103 cm. Peso: 1100 g.",
-      "Datação: Lâmina do século XI, punho do século XV.",
-      "Inscrições: Apresenta gravuras em latim em ambas as faces da lâmina."
+      "Material: Calcário e granito. Época: Império Antigo (IV Dinastia).",
+      "Dimensões: Altura original 146,6 m. Base: 230 m.",
+      "Localização: Planalto de Gizé (Representada na Sala 5)."
     ]
   },
   {
     "id": 4,
-    "nombre_es": "Tesoro de Guarrazar",
-    "nombre_en": "Guarrazar Treasure",
-    "nombre_fr": "Trésor de Guarrazar",
-    "nombre_pt": "Tesouro de Guarrazar",
-    "categoria_es": "Orfebrería",
-    "categoria_en": "Goldsmithing",
-    "categoria_fr": "Orfèvrerie",
-    "categoria_pt": "Ourivesaria",
-    "descripcion_es": "Conjunto de coronas y cruces de oro de la época visigoda.",
-    "descripcion_en": "A set of gold crowns and crosses from the Visigothic era.",
-    "descripcion_fr": "Un ensemble de couronnes et de croix en or de l'époque wisigothique.",
-    "descripcion_pt": "Um conjunto de coroas e cruzes de ouro da era visigótica.",
-    "imagen": "guarrazar",
+    "nombre_es": "Pirámide Escalonada de Djoser",
+    "nombre_en": "Step Pyramid of Djoser",
+    "nombre_fr": "Pyramide à degrés de Djéser",
+    "nombre_pt": "Pirâmide de Degraus de Djoser",
+    "categoria_es": "Pirámide",
+    "categoria_en": "Pyramid",
+    "categoria_fr": "Pyramide",
+    "categoria_pt": "Pirâmide",
+    "descripcion_es": "Considerada la primera pirámide del mundo y la estructura de piedra a gran escala más antigua.",
+    "descripcion_en": "Considered the world's first pyramid and the oldest large-scale stone structure.",
+    "descripcion_fr": "Considérée comme la première pyramide du monde et la plus ancienne structure en pierre à grande échelle.",
+    "descripcion_pt": "Considerada a primeira pirâmide do mundo e a estrutura de pedra em grande escala mais antiga.",
+    "imagen": "images/piramides/piramideescalonadadedjoser",
     "info_extra_es": [
-      "Este tesoro es la muestra más espectacular de la orfebrería visigoda en España, hallado en una huerta de Toledo en 1858.",
-      "Fue enterrado por clérigos ante la inminente invasión musulmana para evitar que fuera saqueado por las tropas invasoras.",
-      "Destaca la corona de Recesvinto, que tiene letras colgantes de oro formando el nombre del rey que la donó a la iglesia."
+      "Diseñada por el arquitecto Imhotep, quien fue posteriormente divinizado por su genialidad.",
+      "Comenzó como una mastaba tradicional y evolucionó a seis niveles escalonados.",
+      "Situada en la necrópolis de Saqqara, forma parte de un enorme complejo funerario."
     ],
     "info_extra_en": [
-      "This treasure is the most spectacular example of Visigothic goldsmithing in Spain, found in an orchard in Toledo in 1858.",
-      "It was buried by clerics before the imminent Muslim invasion to prevent it from being looted by the invading troops.",
-      "The crown of Recceswinth stands out, featuring hanging gold letters forming the name of the king who donated it to the church."
+      "Designed by the architect Imhotep, who was later deified for his genius.",
+      "It began as a traditional mastaba and evolved into six stepped levels.",
+      "Located in the Saqqara necropolis, it is part of a huge funerary complex."
     ],
     "info_extra_fr": [
-      "Ce trésor est l'exemple le plus spectaculaire de l'orfèvrerie wisigothique en Espagne, trouvé dans un verger à Tolède en 1858.",
-      "Il a été enterré par des clercs avant l'imminente invasion musulmane pour éviter qu'il ne soit pillé par les troupes envahissantes.",
-      "La couronne de Réceswinthe se distingue, avec des lettres en or pendantes formant le nom du roi qui l'a offerte à l'église."
+      "Conçue par l'architecte Imhotep, qui fut plus tard divinisé pour son génie.",
+      "Elle a commencé comme un mastaba traditionnel et a évolué en six niveaux de degrés.",
+      "Située dans la nécropole de Saqqarah, elle fait partie d'un immense complexe funéraire."
     ],
     "info_extra_pt": [
-      "Este tesouro é o exemplo mais espetacular da ourivesaria visigótica em Espanha, encontrado num pomar em Toledo em 1858.",
-      "Foi enterrado por clérigos perante a iminente invasão muçulmana para evitar que fosse saqueado pelas tropas invasoras.",
-      "Destaca-se a coroa de Recesvinto, que tem letras de ouro penduradas formando o nome do rei que a doou à igreja."
+      "Projetada pelo arquiteto Imhotep, que foi posteriormente divinizado por sua genialidade.",
+      "Começou como uma mastaba tradicional e evoluiu para seis níveis de degraus.",
+      "Situada na necrópole de Saqqara, faz parte de um enorme complexo funerário."
     ],
     "detalles_tecnicos_es": [
-      "Material: Oro fino, zafiros, granates y perlas. Técnica: Alveolado y repujado.",
-      "Datación: Siglo VII. Época de los reyes Suintila y Recesvinto.",
-      "Ubicación: Repartido entre el MAN (Madrid), Armería Real y Museo de Cluny (París)."
+      "Material: Piedra caliza. Época: Dinastía III (Imperio Antiguo).",
+      "Altura: 60 m. Arquitecto: Imhotep.",
+      "Ubicación: Saqqara (Representada en Sala 5). Pieza destacada."
     ],
     "detalles_tecnicos_en": [
-      "Material: Fine gold, sapphires, garnets, and pearls. Technique: Cloisonné and repoussé.",
-      "Dating: 7th century. Era of kings Swinthila and Recceswinth.",
-      "Location: Divided between the MAN (Madrid), Royal Armory, and Cluny Museum (Paris)."
+      "Material: Limestone. Era: 3rd Dynasty (Old Kingdom).",
+      "Height: 60 m. Architect: Imhotep.",
+      "Location: Saqqara (Represented in Room 5). Featured piece."
     ],
     "detalles_tecnicos_fr": [
-      "Matériau : Or fin, saphirs, grenats et perles. Technique : Cloisonné et repoussé.",
-      "Datation : VIIe siècle. Époque des rois Swinthila et Réceswinthe.",
-      "Emplacement : Réparti entre le MAN (Madrid), l'Armurerie royale et le musée de Cluny (Paris)."
+      "Matériau : Calcaire. Époque : IIIe dynastie (Ancien Empire).",
+      "Hauteur : 60 m. Architecte : Imhotep.",
+      "Emplacement : Saqqarah (Représentée en Salle 5). Pièce maîtresse."
     ],
     "detalles_tecnicos_pt": [
-      "Material: Ouro fino, safiras, granadas e pérolas. Técnica: Alveolado e repuxado.",
-      "Datação: Século VII. Época dos reis Suintila e Recesvinto.",
-      "Localização: Dividido entre o MAN (Madri), Armaria Real e Museu de Cluny (Paris)."
+      "Material: Calcário. Época: III Dinastia (Império Antigo).",
+      "Altura: 60 m. Arquiteto: Imhotep.",
+      "Localização: Saqqara (Representada na Sala 5). Peça de destaque."
+    ]
+  },
+  {
+    "id": 5,
+    "nombre_es": "Osiris",
+    "nombre_en": "Osiris",
+    "nombre_fr": "Osiris",
+    "nombre_pt": "Osíris",
+    "categoria_es": "Deidad",
+    "categoria_en": "Deity",
+    "categoria_fr": "Divinité",
+    "categoria_pt": "Divindade",
+    "descripcion_es": "Dios de la resurrección, símbolo de la fertilidad y regeneración del Nilo, y soberano del inframundo.",
+    "descripcion_en": "God of the resurrection, symbol of fertility and the Nile's regeneration, and ruler of the underworld.",
+    "descripcion_fr": "Dieu de la résurrection, symbole de la fertilité et de la régénération du Nil, et souverain de l'au-delà.",
+    "descripcion_pt": "Deus da ressurreição, símbolo da fertilidade e regeneração do Nilo, e soberano do submundo.",
+    "imagen": "images/dioses/osirismuerte",
+    "info_extra_es": [
+      "Es representado tradicionalmente como una momia de piel verde o negra, portando el cayado y el mayal.",
+      "Según el mito, fue asesinado por su hermano Set y resucitado por su esposa Isis.",
+      "Todos los difuntos esperaban convertirse en un 'Osiris' para alcanzar la vida eterna."
+    ],
+    "info_extra_en": [
+      "He is traditionally depicted as a green or black-skinned mummy, carrying the crook and flail.",
+      "According to myth, he was murdered by his brother Set and resurrected by his wife Isis.",
+      "Every deceased person hoped to become an 'Osiris' to achieve eternal life."
+    ],
+    "info_extra_fr": [
+      "Il est traditionnellement représenté comme une momie à la peau verte ou noire, portant le sceptre Héqa et le flagellum Nékhékh.",
+      "Selon le mythe, il fut assassiné par son frère Seth et ressuscité par son épouse Isis.",
+      "Tous les défunts espéraient devenir un 'Osiris' pour atteindre la vie éternelle."
+    ],
+    "info_extra_pt": [
+      "É representado tradicionalmente como uma múmia de pele verde ou preta, portando o cajado e o mangual.",
+      "Segundo o mito, foi assassinado por seu irmão Set e ressuscitado por sua esposa Ísis.",
+      "Todos os falecidos esperavam tornar-se um 'Osíris' para alcançar a vida eterna."
+    ],
+    "detalles_tecnicos_es": [
+      "Material: Madera policromada. Época: Imperio Medio.",
+      "Simbología: Regeneración y juicio final.",
+      "Ubicación: Sala 2 - Dioses Funerarios. Pieza destacada."
+    ],
+    "detalles_tecnicos_en": [
+      "Material: Polychrome wood. Era: Middle Kingdom.",
+      "Symbology: Regeneration and final judgment.",
+      "Location: Room 2 - Funerary Gods. Featured piece."
+    ],
+    "detalles_tecnicos_fr": [
+      "Matériau : Bois polychrome. Époque : Moyen Empire.",
+      "Symbologie : Régénération et jugement dernier.",
+      "Emplacement : Salle 2 - Dieux Funéraires. Pièce maîtresse."
+    ],
+    "detalles_tecnicos_pt": [
+      "Material: Madeira policromada. Época: Império Médio.",
+      "Simbologia: Regeneração e julgamento final.",
+      "Localização: Sala 2 - Deuses Funerários. Peça de destaque."
+    ]
+  },
+  {
+    "id": 6,
+    "nombre_es": "Ra",
+    "nombre_en": "Ra",
+    "nombre_fr": "Rê",
+    "nombre_pt": "Rá",
+    "categoria_es": "Deidad Solar",
+    "categoria_en": "Solar Deity",
+    "categoria_fr": "Divinité Solaire",
+    "categoria_pt": "Divindade Solar",
+    "descripcion_es": "Dios del sol, del cielo y del origen de la vida, representado comúnmente con cabeza de halcón y un disco solar.",
+    "descripcion_en": "God of the sun, the sky, and the origin of life, commonly represented with a falcon head and a sun disk.",
+    "descripcion_fr": "Dieu du soleil, du ciel et de l'origine de la vie, communément représenté avec une tête de faucon et un disque solaire.",
+    "descripcion_pt": "Deus do sol, do céu e da origem da vida, comumente representado com cabeça de falcão e um disco solar.",
+    "imagen": "images/dioses/rasol",
+    "info_extra_es": [
+      "Se creía que Ra viajaba a través del cielo durante el día en una barca solar llamada Mandjet.",
+      "Es el creador de todas las formas de vida y el responsable de que el sol salga cada mañana tras vencer a la serpiente Apofis.",
+      "A menudo se fusionaba con otros dioses, como Amón, para formar la poderosa entidad Amón-Ra."
+    ],
+    "info_extra_en": [
+      "Ra was believed to travel across the sky during the day in a solar barque called Mandjet.",
+      "He is the creator of all forms of life and responsible for the sun rising every morning after defeating the serpent Apep.",
+      "He was often merged with other gods, such as Amun, to form the powerful entity Amun-Ra."
+    ],
+    "info_extra_fr": [
+      "On croyait que Rê traversait le ciel pendant la journée dans une barque solaire nommée Mandjet.",
+      "Il est le créateur de toutes les formes de vie et responsable du lever du soleil chaque matin après avoir vaincu le serpent Apophis.",
+      "Il était souvent fusionné avec d'autres dieux, comme Amon, pour former la puissante entité Amon-Rê."
+    ],
+    "info_extra_pt": [
+      "Acreditava-se que Rá viajava pelo céu durante o dia em um barco solar chamado Mandjet.",
+      "É o criador de todas as formas de vida e o responsável pelo nascer do sol todas as manhãs após derrotar a serpente Apófis.",
+      "Frequentemente fundia-se com outros deuses, como Amon, para formar a poderosa entidade Amon-Rá."
+    ],
+    "detalles_tecnicos_es": [
+      "Material: Piedra policromada. Época: Imperio Antiguo.",
+      "Simbología: Poder creativo y orden cósmico (Maat).",
+      "Ubicación: Sala 3 - Dioses del Cielo. Pieza destacada."
+    ],
+    "detalles_tecnicos_en": [
+      "Material: Polychrome stone. Era: Old Kingdom.",
+      "Symbology: Creative power and cosmic order (Maat).",
+      "Location: Room 3 - Gods of the Sky. Featured piece."
+    ],
+    "detalles_tecnicos_fr": [
+      "Matériau : Pierre polychrome. Époque : Ancien Empire.",
+      "Symbologie : Pouvoir créateur et ordre cosmique (Maât).",
+      "Emplacement : Salle 3 - Dieux du Ciel. Pièce maîtresse."
+    ],
+    "detalles_tecnicos_pt": [
+      "Material: Pedra policromada. Época: Império Antigo.",
+      "Simbologia: Poder criativo e ordem cósmica (Maat).",
+      "Localização: Sala 3 - Deuses do Céu. Peça de destaque."
+    ]
+  },
+  {
+    "id": 7,
+    "nombre_es": "Mastaba de Mereruka",
+    "nombre_en": "Mastaba of Mereruka",
+    "nombre_fr": "Mastaba de Mererouka",
+    "nombre_pt": "Mastaba de Mereruca",
+    "categoria_es": "Tumba",
+    "categoria_en": "Tomb",
+    "categoria_fr": "Tombe",
+    "categoria_pt": "Tumba",
+    "descripcion_es": "La mastaba más grande y compleja de Saqqara, perteneciente al visir del faraón Teti.",
+    "descripcion_en": "The largest and most complex mastaba in Saqqara, belonging to the vizier of Pharaoh Teti.",
+    "descripcion_fr": "Le mastaba le plus grand et le plus complexe de Saqqarah, appartenant au vizir du pharaon Téti.",
+    "descripcion_pt": "A maior e mais complexa mastaba de Saqqara, pertencente ao vizir do faraó Teti.",
+    "imagen": "images/piramides/mastabademereruka",
+    "info_extra_es": [
+      "Contiene 33 salas decoradas con relieves excepcionales que muestran escenas de la vida cotidiana.",
+      "Mereruka fue una figura poderosa que servía como jefe de la justicia y visir del reino.",
+      "Los relieves incluyen escenas de caza, pesca y el trabajo de diversos artesanos de la época."
+    ],
+    "info_extra_en": [
+      "It contains 33 rooms decorated with exceptional reliefs showing scenes of daily life.",
+      "Mereruka was a powerful figure who served as chief justice and vizier of the kingdom.",
+      "The reliefs include scenes of hunting, fishing, and the work of various craftsmen of the time."
+    ],
+    "info_extra_fr": [
+      "Il contient 33 salles décorées de reliefs exceptionnels illustrant des scènes de la vie quotidienne.",
+      "Mererouka était un personnage puissant qui servait de chef de la justice et de vizir du royaume.",
+      "Les reliefs comprennent des scènes de chasse, de pêche et le travail de divers artisans de l'époque."
+    ],
+    "info_extra_pt": [
+      "Contém 33 salas decoradas com relevos excepcionais que mostram cenas da vida cotidiana.",
+      "Mereruca foi uma figura poderosa que serviu como chefe da justiça e vizir do reino.",
+      "Os relevos incluem cenas de caça, pesca e o trabalho de diversos artesãos da época."
+    ],
+    "detalles_tecnicos_es": [
+      "Material: Piedra caliza. Época: Dinastía VI (Imperio Antiguo).",
+      "Estructura: Complejo funerario familiar.",
+      "Ubicación: Necrópolis de Saqqara (Representada en Sala 4)."
+    ],
+    "detalles_tecnicos_en": [
+      "Material: Limestone. Era: 6th Dynasty (Old Kingdom).",
+      "Structure: Family funerary complex.",
+      "Location: Saqqara Necropolis (Represented in Room 4)."
+    ],
+    "detalles_tecnicos_fr": [
+      "Matériau : Calcaire. Époque : VIe dynastie (Ancien Empire).",
+      "Structure : Complexe funéraire familial.",
+      "Emplacement : Nécropole de Saqqarah (Représentée en Salle 4)."
+    ],
+    "detalles_tecnicos_pt": [
+      "Material: Calcário. Época: VI Dinastia (Império Antigo).",
+      "Estrutura: Complexo funerário familiar.",
+      "Localização: Necrópole de Saqqara (Representada na Sala 4)."
+    ]
+  },
+  {
+    "id": 8,
+    "nombre_es": "Pirámide Roja",
+    "nombre_en": "Red Pyramid",
+    "nombre_fr": "Pyramide Rouge",
+    "nombre_pt": "Pirâmide Vermelha",
+    "categoria_es": "Pirámide",
+    "categoria_en": "Pyramid",
+    "categoria_fr": "Pyramide",
+    "categoria_pt": "Pirâmide",
+    "descripcion_es": "La primera pirámide de caras lisas construida con éxito, famosa por el tono rojizo de su piedra.",
+    "descripcion_en": "The first successfully built smooth-sided pyramid, famous for the reddish tone of its stone.",
+    "descripcion_fr": "La première pyramide à faces lisses construite avec succès, célèbre pour la teinte rougeâtre de sa pierre.",
+    "descripcion_pt": "A primeira pirâmide de faces lisas construída com sucesso, famosa pelo tom avermelhado de sua pedra.",
+    "imagen": "images/piramides/piramideroja",
+    "info_extra_es": [
+      "Fue construida por el faraón Seneferu, padre de Keops, tras los experimentos fallidos en Meidum.",
+      "Su nombre proviene de la piedra caliza roja utilizada para su núcleo, que quedó expuesta al perder su revestimiento blanco.",
+      "Es la tercera pirámide más grande de Egipto, superada solo por Keops y Kefrén."
+    ],
+    "info_extra_en": [
+      "It was built by Pharaoh Sneferu, father of Khufu, after failed experiments at Meidum.",
+      "Its name comes from the red limestone used for its core, exposed after losing its white casing.",
+      "It is the third-largest pyramid in Egypt, surpassed only by Khufu and Khafre."
+    ],
+    "info_extra_fr": [
+      "Elle fut construite par le pharaon Snéfrou, père de Khéops, après les expériences ratées à Meïdoum.",
+      "Son nom vient du calcaire rouge utilisé pour son noyau, exposé après la perte de son revêtement blanc.",
+      "C'est la troisième plus grande pyramide d'Égypte, surpassée seulement par Khéops et Khéphren."
+    ],
+    "info_extra_pt": [
+      "Foi construída pelo faraó Seneferu, pai de Quéops, após os experimentos fracassados em Meidum.",
+      "Seu nome provém do calcário vermelho utilizado para o seu núcleo, que ficou exposto ao perder o revestimento branco.",
+      "É a terceira maior pirâmide do Egito, superada apenas por Quéops e Quéfren."
+    ],
+    "detalles_tecnicos_es": [
+      "Material: Caliza roja. Época: Imperio Antiguo (Dinastía IV).",
+      "Dimensiones: Altura 105 m. Ángulo: 43 grados.",
+      "Ubicación: Dahshur (Representada en Sala 5)."
+    ],
+    "detalles_tecnicos_en": [
+      "Material: Red limestone. Era: Old Kingdom (4th Dynasty).",
+      "Dimensions: Height 105 m. Angle: 43 degrees.",
+      "Location: Dahshur (Represented in Room 5)."
+    ],
+    "detalles_tecnicos_fr": [
+      "Matériau : Calcaire rouge. Époque : Ancien Empire (IVe dynastie).",
+      "Dimensions : Hauteur 105 m. Angle : 43 degrés.",
+      "Emplacement : Dahchour (Représentée en Salle 5)."
+    ],
+    "detalles_tecnicos_pt": [
+      "Material: Calcário vermelho. Época: Império Antigo (IV Dinastia).",
+      "Dimensões: Altura 105 m. Ângulo: 43 graus.",
+      "Localização: Dahshur (Representada na Sala 5)."
+    ]
+  },
+  {
+    "id": 9,
+    "nombre_es": "Pirámide de Kefrén",
+    "nombre_en": "Pyramid of Khafre",
+    "nombre_fr": "Pyramide de Khéphren",
+    "nombre_pt": "Pirâmide de Quéfren",
+    "categoria_es": "Pirámide",
+    "categoria_en": "Pyramid",
+    "categoria_fr": "Pyramide",
+    "categoria_pt": "Pirâmide",
+    "descripcion_es": "La segunda pirámide más grande de Giza, conocida por conservar parte de su revestimiento original en la cima.",
+    "descripcion_en": "The second-largest pyramid in Giza, known for retaining part of its original casing at the top.",
+    "descripcion_fr": "La deuxième plus grande pyramide de Gizeh, connue pour avoir conservé une partie de son revêtement d'origine au sommet.",
+    "descripcion_pt": "A segunda maior pirâmide de Gizé, conhecida por conservar parte de seu revestimento original no topo.",
+    "imagen": "images/piramides/piramidekefren",
+    "info_extra_es": [
+      "Aunque es más baja que la de Keops, parece más alta porque está construida sobre una base más elevada.",
+      "Su complejo funerario incluye la Gran Esfinge, que se cree representa al propio faraón Kefrén.",
+      "Es la única de las tres pirámides que aún mantiene el recubrimiento de piedra caliza en su punto más alto."
+    ],
+    "info_extra_en": [
+      "Although shorter than Khufu's, it appears taller because it's built on a higher foundation.",
+      "Its funerary complex includes the Great Sphinx, believed to represent Pharaoh Khafre himself.",
+      "It is the only one of the three pyramids that still retains the limestone casing at its highest point."
+    ],
+    "info_extra_fr": [
+      "Bien que plus basse que celle de Khéops, elle semble plus haute car elle est construite sur un socle plus élevé.",
+      "Son complexe funéraire comprend le Grand Sphinx, que l'on croit représenter le pharaon Khéphren lui-même.",
+      "C'est la seule des trois pyramides qui conserve encore le revêtement calcaire à son point le plus haut."
+    ],
+    "info_extra_pt": [
+      "Embora seja mais baixa que a de Quéops, parece mais alta porque está construída sobre uma base mais elevada.",
+      "Seu complexo funerário inclui a Grande Esfinge, que se acredita representar o próprio faraó Quéfren.",
+      "É a única das três pirâmides que ainda mantém o recobrimento de calcário em seu ponto mais alto."
+    ],
+    "detalles_tecnicos_es": [
+      "Material: Caliza y granito. Época: Imperio Antiguo (Dinastía IV).",
+      "Altura: 136.4 m (original 143.5 m).",
+      "Ubicación: Meseta de Giza (Representada en Sala 5)."
+    ],
+    "detalles_tecnicos_en": [
+      "Material: Limestone and granite. Era: Old Kingdom (4th Dynasty).",
+      "Height: 136.4 m (original 143.5 m).",
+      "Location: Giza Plateau (Represented in Room 5)."
+    ],
+    "detalles_tecnicos_fr": [
+      "Matériau : Calcaire et granit. Époque : Ancien Empire (IVe dynastie).",
+      "Hauteur : 136,4 m (origine 143,5 m).",
+      "Emplacement : Plateau de Gizeh (Représentée en Salle 5)."
+    ],
+    "detalles_tecnicos_pt": [
+      "Material: Calcário e granito. Época: Império Antigo (IV Dinastia).",
+      "Altura: 136,4 m (original 143,5 m).",
+      "Localização: Planalto de Gizé (Representada na Sala 5)."
+    ]
+  },
+  {
+    "id": 10,
+    "nombre_es": "Pirámide de Micerino",
+    "nombre_en": "Pyramid of Menkaure",
+    "nombre_fr": "Pyramide de Mykérinos",
+    "nombre_pt": "Pirâmide de Miquerinos",
+    "categoria_es": "Pirámide",
+    "categoria_en": "Pyramid",
+    "categoria_fr": "Pyramide",
+    "categoria_pt": "Pirâmide",
+    "descripcion_es": "La menor de las tres pirámides principales de Giza, construida para el faraón Menkaure.",
+    "descripcion_en": "The smallest of the three main Giza pyramids, built for Pharaoh Menkaure.",
+    "descripcion_fr": "La plus petite des trois pyramides principales de Gizeh, construite pour le pharaon Mykérinos.",
+    "descripcion_pt": "A menor das três pirâmides principais de Gizé, construída para o faraó Miquerinos.",
+    "imagen": "images/piramides/piramidemicerino",
+    "info_extra_es": [
+      "Se diferencia de las otras dos por tener la parte inferior revestida de granito rojo de Asuán.",
+      "Sufrió un intento de demolición en el siglo XII por el sultán Al-Aziz, que dejó una brecha vertical visible.",
+      "En su interior se halló un sarcófago de basalto magnífico que se perdió en el mar cerca de Cartagena en 1838."
+    ],
+    "info_extra_en": [
+      "It differs from the other two by having its lower part encased in red granite from Aswan.",
+      "It survived a demolition attempt in the 12th century by Sultan Al-Aziz, leaving a visible vertical breach.",
+      "A magnificent basalt sarcophagus was found inside but was lost at sea near Cartagena in 1838."
+    ],
+    "info_extra_fr": [
+      "Elle se distingue des deux autres par sa partie inférieure revêtue de granit rouge d'Assouan.",
+      "Elle a subi une tentative de démolition au XIIe siècle par le sultan Al-Aziz, qui a laissé une brèche verticale visible.",
+      "Un magnifique sarcophage en basalte a été trouvé à l'intérieur mais a été perdu en mer près de Carthagène en 1838."
+    ],
+    "info_extra_pt": [
+      "Diferencia-se das outras duas por ter a parte inferior revestida de granito vermelho de Assuã.",
+      "Sofreu uma tentativa de demolição no século XII pelo sultão Al-Aziz, que deixou uma fenda vertical visível.",
+      "Em seu interior foi encontrado um sarcófago de basalto magnífico que se perdeu no mar perto de Cartagena em 1838."
+    ],
+    "detalles_tecnicos_es": [
+      "Material: Caliza y granito rojo. Época: Imperio Antiguo (Dinastía IV).",
+      "Altura: 65 m. Base: 103 m.",
+      "Ubicación: Meseta de Giza (Representada en Sala 5). Pieza destacada."
+    ],
+    "detalles_tecnicos_en": [
+      "Material: Limestone and red granite. Era: Old Kingdom (4th Dynasty).",
+      "Height: 65 m. Base: 103 m.",
+      "Location: Giza Plateau (Represented in Room 5). Featured piece."
+    ],
+    "detalles_tecnicos_fr": [
+      "Matériau : Calcaire et granit rouge. Époque : Ancien Empire (IVe dynastie).",
+      "Hauteur : 65 m. Base : 103 m.",
+      "Emplacement : Plateau de Gizeh (Représentée en Salle 5). Pièce maîtresse."
+    ],
+    "detalles_tecnicos_pt": [
+      "Material: Calcário e granito vermelho. Época: Império Antigo (IV Dinastia).",
+      "Altura: 65 m. Base: 103 m.",
+      "Localização: Planalto de Gizé (Representada na Sala 5). Peça de destaque."
+    ]
+  },
+  {
+    "id": 11,
+    "nombre_es": "Pirámide Negra",
+    "nombre_en": "Black Pyramid",
+    "nombre_fr": "Pyramide Noire",
+    "nombre_pt": "Pirâmide Negra",
+    "categoria_es": "Pirámide",
+    "categoria_en": "Pyramid",
+    "categoria_fr": "Pyramide",
+    "categoria_pt": "Pirâmide",
+    "descripcion_es": "Construida por Amenemhat III, debe su nombre al color oscuro de su núcleo de ladrillos de adobe.",
+    "descripcion_en": "Built by Amenemhat III, it owes its name to the dark color of its mudbrick core.",
+    "descripcion_fr": "Construite par Amenemhat III, elle doit son nom à la couleur sombre de son noyau en briques crues.",
+    "descripcion_pt": "Construída por Amenemhat III, deve seu nome à cor escura de seu núcleo de tijolos de adobe.",
+    "imagen": "images/piramides/piramidenegra",
+    "info_extra_es": [
+      "Es una de las pocas pirámides del Imperio Medio que aún conserva su piramidión (punta de piedra) original.",
+      "Debido a que fue construida sobre terreno pantanoso, sufrió graves problemas estructurales y se hundió parcialmente.",
+      "Su diseño interno era extremadamente complejo para confundir a los ladrones de tumbas."
+    ],
+    "info_extra_en": [
+      "It is one of the few Middle Kingdom pyramids that still retains its original pyramidion (capstone).",
+      "Because it was built on marshy ground, it suffered severe structural problems and partially collapsed.",
+      "Its internal design was extremely complex to confuse tomb robbers."
+    ],
+    "info_extra_fr": [
+      "C'est l'une des rares pyramides du Moyen Empire qui conserve encore son pyramidion (pierre de faîte) d'origine.",
+      "Comme elle a été construite sur un terrain marécageux, elle a subi de graves problèmes structurels et s'est partiellement effondrée.",
+      "Sa conception interne était extrêmement complexe pour égarer les pillards de tombes."
+    ],
+    "info_extra_pt": [
+      "É uma das poucas pirâmides do Império Médio que ainda conserva seu piramídio (ponta de pedra) original.",
+      "Devido ao fato de ter sido construída sobre terreno pantanoso, sofreu graves problemas estruturais e afundou parcialmente.",
+      "Seu design interno era extremamente complexo para confundir os ladrões de túmulos."
+    ],
+    "detalles_tecnicos_es": [
+      "Material: Adobe y piedra. Época: Imperio Medio (Dinastía XII).",
+      "Estado actual: Ruinosa (apariencia de colina).",
+      "Ubicación: Dahshur (Representada en Sala 5)."
+    ],
+    "detalles_tecnicos_en": [
+      "Material: Mudbrick and stone. Era: Middle Kingdom (12th Dynasty).",
+      "Current state: Ruinous (hill-like appearance).",
+      "Location: Dahshur (Represented in Room 5)."
+    ],
+    "detalles_tecnicos_fr": [
+      "Matériau : Brique crue et pierre. Époque : Moyen Empire (XIIe dynastie).",
+      "État actuel : Ruine (apparence d'une colline).",
+      "Emplacement : Dahchour (Représentée en Salle 5)."
+    ],
+    "detalles_tecnicos_pt": [
+      "Material: Adobe e pedra. Época: Império Médio (XII Dinastia).",
+      "Estado atual: Ruinosa (aparência de colina).",
+      "Localização: Dahshur (Representada na Sala 5)."
+    ]
+  },
+  {
+    "id": 12,
+    "nombre_es": "Mastaba de Saqqara",
+    "nombre_en": "Saqqara Mastaba",
+    "nombre_fr": "Mastaba de Saqqarah",
+    "nombre_pt": "Mastaba de Saqqara",
+    "categoria_es": "Tumba",
+    "categoria_en": "Tomb",
+    "categoria_fr": "Tombe",
+    "categoria_pt": "Tumba",
+    "descripcion_es": "Estructura funeraria de base rectangular y techo plano, precursora de las pirámides.",
+    "descripcion_en": "Funerary structure with a rectangular base and flat roof, precursor to the pyramids.",
+    "descripcion_fr": "Structure funéraire à base rectangulaire et toit plat, précurseur des pyramides.",
+    "descripcion_pt": "Estrutura funerária de base retangular e teto plano, precursora das pirâmides.",
+    "imagen": "images/piramides/mastabadesaqqara",
+    "info_extra_es": [
+      "La palabra 'mastaba' significa 'banco' en árabe, debido a su forma característica.",
+      "Servían como entierro para soberanos y altos funcionarios antes de la invención de las pirámides.",
+      "Constaban de una cámara subterránea para el sarcófago y una capilla superior para las ofrendas."
+    ],
+    "info_extra_en": [
+      "The word 'mastaba' means 'bench' in Arabic, due to its characteristic shape.",
+      "They served as burials for sovereigns and high officials before the invention of pyramids.",
+      "They consisted of an underground chamber for the sarcophagus and an upper chapel for offerings."
+    ],
+    "info_extra_fr": [
+      "Le mot 'mastaba' signifie 'banc' en arabe, en raison de sa forme caractéristique.",
+      "Ils servaient de sépulture aux souverains et aux hauts fonctionnaires avant l'invention des pyramides.",
+      "Ils se composaient d'une chambre souterraine pour le sarcophage et d'une chapelle supérieure pour les offrandes."
+    ],
+    "info_extra_pt": [
+      "A palavra 'mastaba' significa 'banco' em árabe, devido à sua forma característica.",
+      "Serviam como sepultamento para soberanos e altos funcionários antes da invenção das pirâmides.",
+      "Consistiam em uma câmara subterrânea para o sarcófago e uma capela superior para as oferendas."
+    ],
+    "detalles_tecnicos_es": [
+      "Material: Piedra caliza y ladrillo de barro. Época: Imperio Antiguo.",
+      "Evolución: De aquí surgió la pirámide escalonada.",
+      "Ubicación: Sala 4 - Arquitectura Funeraria."
+    ],
+    "detalles_tecnicos_en": [
+      "Material: Limestone and mudbrick. Era: Old Kingdom.",
+      "Evolution: The step pyramid emerged from this design.",
+      "Location: Room 4 - Funerary Architecture."
+    ],
+    "detalles_tecnicos_fr": [
+      "Matériau : Calcaire et brique de terre. Époque : Ancien Empire.",
+      "Évolution : C'est de là qu'est née la pyramide à degrés.",
+      "Emplacement : Salle 4 - Architecture Funéraire."
+    ],
+    "detalles_tecnicos_pt": [
+      "Material: Calcário e tijolo de barro. Época: Império Antigo.",
+      "Evolução: Daqui surgiu a pirâmide de degraus.",
+      "Localização: Sala 4 - Arquitetura Funerária."
+    ]
+  },
+  {
+    "id": 13,
+    "nombre_es": "Mastaba de Shepseskaf",
+    "nombre_en": "Mastaba of Shepseskaf",
+    "nombre_fr": "Mastaba de Chepseskaf",
+    "nombre_pt": "Mastaba de Shepseskaf",
+    "categoria_es": "Tumba Real",
+    "categoria_en": "Royal Tomb",
+    "categoria_fr": "Tombe Royale",
+    "categoria_pt": "Tumba Real",
+    "descripcion_es": "Tumba única del último faraón de la IV Dinastía, que eligió una mastaba gigante en lugar de una pirámide.",
+    "descripcion_en": "Unique tomb of the last pharaoh of the 4th Dynasty, who chose a giant mastaba instead of a pyramid.",
+    "descripcion_fr": "Tombe unique du dernier pharaon de la IVe dynastie, qui choisit un mastaba géant au lieu d'une pyramide.",
+    "descripcion_pt": "Tumba única do último faraó da IV Dinastia, que escolheu uma mastaba gigante em vez de uma pirâmide.",
+    "imagen": "images/piramides/mastabadeshepseskaf",
+    "info_extra_es": [
+      "Es conocida localmente como 'Mastabat al-Fira'un' (el banco del faraón).",
+      "Su forma se asemeja a un sarcófago monumental elevado sobre una plataforma.",
+      "Se cree que Shepseskaf rompió con la tradición de las pirámides por motivos religiosos o políticos."
+    ],
+    "info_extra_en": [
+      "It is locally known as 'Mastabat al-Fira'un' (the Pharaoh's bench).",
+      "Its shape resembles a monumental sarcophagus raised on a platform.",
+      "It is believed that Shepseskaf broke with the pyramid tradition for religious or political reasons."
+    ],
+    "info_extra_fr": [
+      "Il est connu localement sous le nom de 'Mastabat al-Fira'un' (le banc du Pharaon).",
+      "Sa forme ressemble à un sarcophage monumental posé sur une plateforme.",
+      "On pense que Chepseskaf a rompu avec la tradition des pyramides pour des raisons religieuses ou politiques."
+    ],
+    "info_extra_pt": [
+      "É conhecida localmente como 'Mastabat al-Fira'un' (o banco do faraó).",
+      "Sua forma assemelha-se a um sarcófago monumental elevado sobre uma plataforma.",
+      "Acredita-se que Shepseskaf rompeu com a tradição das pirâmides por motivos religiosos ou políticos."
+    ],
+    "detalles_tecnicos_es": [
+      "Material: Piedra caliza. Época: Dinastía IV (Imperio Antiguo).",
+      "Ubicación: Saqqara sur (Representada en Sala 4).",
+      "Estilo: Mastaba monumental."
+    ],
+    "detalles_tecnicos_en": [
+      "Material: Limestone. Era: 4th Dynasty (Old Kingdom).",
+      "Location: South Saqqara (Represented in Room 4).",
+      "Style: Monumental mastaba."
+    ],
+    "detalles_tecnicos_fr": [
+      "Matériau : Calcaire. Époque : IVe dynastie (Ancien Empire).",
+      "Emplacement : Saqqarah sud (Représentée en Salle 4).",
+      "Style : Mastaba monumental."
+    ],
+    "detalles_tecnicos_pt": [
+      "Material: Calcário. Época: IV Dinastia (Império Antigo).",
+      "Localização: Saqqara sul (Representada na Sala 4).",
+      "Estilo: Mastaba monumental."
+    ]
+  },
+  {
+    "id": 14,
+    "nombre_es": "Pirámide Escalonada de Sekhemkhet",
+    "nombre_en": "Buried Pyramid of Sekhemkhet",
+    "nombre_fr": "Pyramide enfouie de Sekhemkhet",
+    "nombre_pt": "Pirâmide de Sekhemkhet",
+    "categoria_es": "Pirámide",
+    "categoria_en": "Pyramid",
+    "categoria_fr": "Pyramide",
+    "categoria_pt": "Pirâmide",
+    "descripcion_es": "Una pirámide escalonada inacabada, descubierta en 1951, que permaneció oculta bajo la arena durante milenios.",
+    "descripcion_en": "An unfinished step pyramid, discovered in 1951, which remained hidden under the sand for millennia.",
+    "descripcion_fr": "Une pyramide à degrés inachevée, découverte en 1951, restée cachée sous le sable pendant des millénaires.",
+    "descripcion_pt": "Uma pirâmide de degraus inacabada, descoberta em 1951, que permaneceu oculta sob a areia por milênios.",
+    "imagen": "images/piramides/piramideescalonadadesekhemkhet",
+    "info_extra_es": [
+      "Se planeó para ser más grande que la de Djoser, con siete niveles escalonados.",
+      "Cuando se abrió su sarcófago de alabastro en 1954, se encontró vacío, un misterio arqueológico que aún perdura.",
+      "Es conocida como la 'Pirámide Enterrada' porque solo se completó el primer nivel."
+    ],
+    "info_extra_en": [
+      "It was planned to be larger than Djoser's, with seven stepped levels.",
+      "When its alabaster sarcophagus was opened in 1954, it was found empty, an archaeological mystery that remains today.",
+      "It is known as the 'Buried Pyramid' because only the first level was completed."
+    ],
+    "info_extra_fr": [
+      "Elle devait être plus grande que celle de Djéser, avec sept niveaux de degrés.",
+      "Lorsque son sarcophage en albâtre fut ouvert en 1954, il fut trouvé vide, un mystère archéologique qui subsiste encore.",
+      "Elle est connue sous le nom de 'Pyramide enfouie' car seul le premier niveau fut achevé."
+    ],
+    "info_extra_pt": [
+      "Foi planejada para ser maior que a de Djoser, com sete níveis de degraus.",
+      "Quando seu sarcófago de alabastro foi aberto em 1954, foi encontrado vazio, um mistério arqueológico que ainda perdura.",
+      "É conhecida como a 'Pirâmide Enterrada' porque apenas o primeiro nível foi concluído."
+    ],
+    "detalles_tecnicos_es": [
+      "Material: Piedra caliza. Época: Dinastía III (Imperio Antiguo).",
+      "Estado: Inacabada. Ubicación: Saqqara (Representada en Sala 5).",
+      "Pieza destacada por su valor arqueológico."
+    ],
+    "detalles_tecnicos_en": [
+      "Material: Limestone. Era: 3rd Dynasty (Old Kingdom).",
+      "State: Unfinished. Location: Saqqara (Represented in Room 5).",
+      "Featured piece due to its archaeological value."
+    ],
+    "detalles_tecnicos_fr": [
+      "Matériau : Calcaire. Époque : IIIe dynastie (Ancien Empire).",
+      "État : Inachevée. Emplacement : Saqqarah (Représentée en Salle 5).",
+      "Pièce maîtresse pour sa valeur archéologique."
+    ],
+    "detalles_tecnicos_pt": [
+      "Material: Pedra calcária. Época: III Dinastia (Império Antigo).",
+      "Estado: Inacabada. Localização: Saqqara (Representada na Sala 5).",
+      "Peça de destaque por seu valor arqueológico."
     ]
   }
 ]

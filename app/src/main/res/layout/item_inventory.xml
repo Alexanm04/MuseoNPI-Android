@@ -21,12 +21,14 @@
             android:layout_width="80dp"
             android:layout_height="80dp"
             app:cardCornerRadius="8dp"
-            app:cardElevation="0dp">
+            app:cardElevation="0dp"
+            app:cardBackgroundColor="#0D000000">
             <ImageView
                 android:id="@+id/ivObject"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:scaleType="centerCrop"
+                android:scaleType="fitCenter"
+                android:padding="4dp"
                 tools:src="@tools:sample/avatars" />
         </com.google.android.material.card.MaterialCardView>
 

@@ -1,9 +1,11 @@
 package com.ugr.npi.museo
 
+import android.graphics.drawable.Drawable
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.ugr.npi.museo.databinding.ItemInventoryBinding
+import java.io.InputStream
 
 class InventoryAdapter(
     private var objects: List<MuseoObject>,
@@ -25,10 +27,24 @@ class InventoryAdapter(
         holder.binding.tvObjectCategory.text = item.getCategoria()
         
         val context = holder.binding.root.context
-        val imageResId = context.resources.getIdentifier(item.imagen, "drawable", context.packageName)
-        if (imageResId != 0) {
-            holder.binding.ivObject.setImageResource(imageResId)
-        } else {
+        
+        // Lista de extensiones a probar
+        val extensions = listOf(".webp", ".png", ".jpg", ".jpeg")
+        var loaded = false
+
+        for (ext in extensions) {
+            try {
+                val inputStream: InputStream = context.assets.open("${item.imagen}$ext")
+                val drawable = Drawable.createFromStream(inputStream, null)
+                holder.binding.ivObject.setImageDrawable(drawable)
+                loaded = true
+                break
+            } catch (e: Exception) {
+                // Continuar probando con la siguiente extensión
+            }
+        }
+
+        if (!loaded) {
             holder.binding.ivObject.setImageResource(android.R.drawable.ic_menu_gallery)
         }
 

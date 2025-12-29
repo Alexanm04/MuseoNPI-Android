@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Paleta Egipto (Modo Oscuro - Tonalidades de tumbas/noche en el desierto) -->
-    <color name="egypt_bg">#1A120B</color> <!-- Negro/Marrón muy oscuro -->
-    <color name="egypt_card">#2D2013</color> <!-- Marrón piedra oscuro -->
-    <color name="egypt_gold">#D4AF37</color> <!-- Oro más brillante para contraste -->
-    <color name="egypt_gold_dark">#B8860B</color> <!-- Oro viejo -->
-    <color name="egypt_text_primary">#F5E6D3</color> <!-- Crema claro -->
-    <color name="egypt_text_secondary">#D2B48C</color> <!-- Arena -->
-    <color name="egypt_accent">#CD5C5C</color> <!-- Rojo arcilla suave -->
-    <color name="egypt_button_bg">#3E2723</color> <!-- Botón oscuro -->
+    <!-- Paleta Egipto (Modo Oscuro - Basalto y Azul Noche) -->
+    <color name="egypt_bg">#0C0E12</color> <!-- Basalto muy oscuro (casi negro) -->
+    <color name="egypt_card">#1A1F26</color> <!-- Azul noche profundo / Piedra oscura -->
+    <color name="egypt_gold">#E5C100</color> <!-- Oro más vibrante para resaltar -->
+    <color name="egypt_gold_dark">#D4AF37</color> <!-- Oro viejo -->
+    <color name="egypt_text_primary">#F0F0F0</color> <!-- Blanco suave / Plata -->
+    <color name="egypt_text_secondary">#A0AAB8</color> <!-- Gris azulado / Arena fría -->
+    <color name="egypt_accent">#005F6B</color> <!-- Turquesa / Lapislázuli oscuro -->
+    <color name="egypt_button_bg">#242B35</color> <!-- Botón azulado oscuro -->
 </resources>
