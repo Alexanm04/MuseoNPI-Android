@@ -1,0 +1,102 @@
+[
+  {
+    "pregunta": "¿Quién es el dios de los muertos con cabeza de chacal? (Sala Dioses)",
+    "opciones": ["Anubis", "Horus", "Ra", "Osiris"],
+    "respuestaCorrecta": 0
+  },
+  {
+    "pregunta": "¿Quién es el dios supremo del Sol? (Sala Dioses)",
+    "opciones": ["Osiris", "Ra", "Ptah", "Thot"],
+    "respuestaCorrecta": 1
+  },
+  {
+    "pregunta": "¿Quién es la diosa de la magia y esposa de Osiris? (Sala Dioses)",
+    "opciones": ["Hathor", "Sekhmet", "Isis", "Bastet"],
+    "respuestaCorrecta": 2
+  },
+  {
+    "pregunta": "¿Qué dios del caos asesinó a su hermano Osiris? (Sala Dioses)",
+    "opciones": ["Horus", "Thot", "Amón", "Seth"],
+    "respuestaCorrecta": 3
+  },
+  {
+    "pregunta": "¿Qué faraón es famoso por su tumba intacta? (Sala Faraones)",
+    "opciones": ["Ramsés II", "Tutankamón", "Keops", "Akhenatón"],
+    "respuestaCorrecta": 1
+  },
+  {
+    "pregunta": "¿Quién fue la mujer faraón que usaba barba postiza? (Sala Faraones)",
+    "opciones": ["Hatshepsut", "Nefertiti", "Cleopatra", "Tiy"],
+    "respuestaCorrecta": 0
+  },
+  {
+    "pregunta": "¿Qué faraón construyó los templos de Abu Simbel? (Sala Faraones)",
+    "opciones": ["Zoser", "Tutankamón", "Ramsés II", "Seti I"],
+    "respuestaCorrecta": 2
+  },
+  {
+    "pregunta": "¿Qué faraón intentó imponer un solo dios (Atón)? (Sala Faraones)",
+    "opciones": ["Kefrén", "Micerino", "Tutmosis III", "Akhenatón"],
+    "respuestaCorrecta": 3
+  },
+  {
+    "pregunta": "¿Qué planta del Nilo se usaba para hacer papel? (Sala Río Nilo)",
+    "opciones": ["Loto", "Papiro", "Palma", "Junco"],
+    "respuestaCorrecta": 1
+  },
+  {
+    "pregunta": "¿Qué temible reptil habita en las aguas del Nilo? (Sala Río Nilo)",
+    "opciones": ["Hipopótamo", "Cobra", "Cocodrilo", "Varano"],
+    "respuestaCorrecta": 2
+  },
+  {
+    "pregunta": "¿Qué dejaba el Nilo tras la inundación que fertilizaba la tierra? (Sala Río Nilo)",
+    "opciones": ["Sal", "Limo negro", "Arena", "Piedras"],
+    "respuestaCorrecta": 1
+  },
+  {
+    "pregunta": "¿En qué dirección fluye el río Nilo? (Sala Río Nilo)",
+    "opciones": ["Norte a Sur", "Este a Oeste", "Sur a Norte", "Oeste a Este"],
+    "respuestaCorrecta": 2
+  },
+  {
+    "pregunta": "¿Para qué servían principalmente las pirámides? (Sala Pirámides)",
+    "opciones": ["Templos", "Palacios", "Graneros", "Tumbas"],
+    "respuestaCorrecta": 3
+  },
+  {
+    "pregunta": "¿Cuál es la pirámide más grande de Giza? (Sala Pirámides)",
+    "opciones": ["Kefrén", "Keops", "Micerino", "Zoser"],
+    "respuestaCorrecta": 1
+  },
+  {
+    "pregunta": "¿Qué criatura custodia las pirámides de Giza? (Sala Pirámides)",
+    "opciones": ["El Fénix", "El Grifo", "La Esfinge", "El Leviatán"],
+    "respuestaCorrecta": 2
+  },
+  {
+    "pregunta": "¿Qué faraón construyó la primera pirámide escalonada? (Sala Pirámides)",
+    "opciones": ["Zoser", "Keops", "Snefru", "Imhotep"],
+    "respuestaCorrecta": 0
+  },
+  {
+    "pregunta": "¿Qué órgano se pesaba en el juicio final? (Sala Inframundo)",
+    "opciones": ["El cerebro", "El hígado", "Los ojos", "El corazón"],
+    "respuestaCorrecta": 3
+  },
+  {
+    "pregunta": "¿Contra qué objeto se pesaba el corazón del difunto? (Sala Inframundo)",
+    "opciones": ["Una pluma", "Una piedra", "Una moneda", "Un cuchillo"],
+    "respuestaCorrecta": 0
+  },
+  {
+    "pregunta": "¿Qué libro guiaba a los muertos en el más allá? (Sala Inframundo)",
+    "opciones": ["Libro de los Vivos", "Libro de los Reyes", "Libro de los Muertos", "Textos Sagrados"],
+    "respuestaCorrecta": 2
+  },
+  {
+    "pregunta": "¿Quién es el juez supremo del mundo de los muertos? (Sala Inframundo)",
+    "opciones": ["Anubis", "Osiris", "Seth", "Horus"],
+    "respuestaCorrecta": 1
+  }
+]
