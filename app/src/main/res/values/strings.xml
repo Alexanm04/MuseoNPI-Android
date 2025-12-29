@@ -1,31 +1,42 @@
 <resources>
     <string name="app_name">MuseoNPI</string>
-    <!-- TODO: Remove or change this placeholder text -->
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="inicio">Inicio</string>
     <string name="juegos">Juegos</string>
     <string name="mapa">Mapa</string>
     <string name="perfil">Perfil</string>
     <string name="esc_ner">Escáner</string>
+
+    <string name="error">¡ERROR!</string>
+    <string name="la_correcta_era">La correcta era:\n%1$s</string>
+    <string name="tiempo_agotado">¡TIEMPO!</string>
+    <string name="juego_completado">¡JUEGO COMPLETADO!</string>
+    <string name="finalizado">Finalizado</string>
+    <string name="nuevo_record">¡NUEVO RÉCORD!</string>
+
+    <string name="correcto">¡CORRECTO!</string>
+    <string name="jugar_otra_vez">JUGAR OTRA VEZ</string>
+    <string name="r_cord">RÉCORD</string>
+    <string name="tiempo">TIEMPO</string>
+    <string name="puntos_0">PUNTOS</string>
+    <string name="pregunta">¿Pregunta?</string>
+
+    <string name="opcion_1">OPCION 1</string>
+    <string name="opcion_2">OPCION 2</string>
+    <string name="opcion_3">OPCION 3</string>
+    <string name="opcion_4">OPCION 4</string>
+
     <string name="opci_n_d">Opción D</string>
     <string name="opci_n_c">Opción C</string>
     <string name="opci_n_b">Opción B</string>
     <string name="opci_n_a">Opción A</string>
     <string name="cargando_pregunta">Cargando pregunta...</string>
+    <string name="cargando_pregunta1">Cargando pregunta...</string>
     <string name="d">D</string>
     <string name="c">C</string>
     <string name="b">B</string>
     <string name="a">A</string>
-    <string name="puntos_0">Puntos: 0</string>
-    <string name="cargando_pregunta1">Cargando pregunta...</string>
-    <string name="jugar_otra_vez">🔄 Jugar otra vez</string>
-    <string name="correcto">¡CORRECTO!</string>
-    <string name="opcion_4">OPCION 4</string>
-    <string name="opcion_3">OPCION 3</string>
-    <string name="opcion_2">OPCION 2</string>
-    <string name="opcion_1">OPCION 1</string>
-    <string name="pregunta">¿Pregunta?</string>
-    <string name="tiempo">TIEMPO</string>
-    <string name="r_cord">RÉCORD</string>
     <string name="puntos">PUNTOS:</string>
+    <string name="jugar_otra_vez1">JUGAR OTRA VEZ</string>
 </resources>

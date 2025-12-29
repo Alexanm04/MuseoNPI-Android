@@ -9,7 +9,7 @@
     <item
         android:id="@+id/gamesFragment"
         android:title="@string/juegos"
-        android:icon="@drawable/ic_launcher_foreground" />
+        android:icon="@drawable/iconojuego" />
 
     <item
         android:id="@+id/mapFragment"

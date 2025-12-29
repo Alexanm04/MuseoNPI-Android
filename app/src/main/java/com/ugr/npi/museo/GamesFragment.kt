@@ -23,7 +23,7 @@ class GamesFragment : Fragment(R.layout.fragment_games) {
 
     // --- UI ---
     private lateinit var tvPregunta: TextView
-    private lateinit var tvProgress: TextView // NUEVO: Contador
+    private lateinit var tvProgress: TextView
     private lateinit var tvScore: TextView
     private lateinit var tvTimer: TextView
     private lateinit var tvHighScore: TextView
@@ -43,14 +43,13 @@ class GamesFragment : Fragment(R.layout.fragment_games) {
     private var timer: CountDownTimer? = null
     private var juegoTerminado = false
 
-    // NUEVO: Guardamos el TEXTO de la respuesta correcta, no el índice
+    // Guardamos el texto de la respuesta correcta para mostrarlo al fallar
     private var respuestaCorrectaActualString: String = ""
 
     private val TIEMPO_POR_PREGUNTA = 20000L
 
     private lateinit var sharedPreferences: SharedPreferences
-
-    // Colores Temática Egipto
+    // Colores temática Egipto
     private val coloresOriginales = listOf("#A52A2A", "#1C39BB", "#D4AF37", "#2E8B57")
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -58,12 +57,11 @@ class GamesFragment : Fragment(R.layout.fragment_games) {
 
         sharedPreferences = requireActivity().getSharedPreferences("MisJuegos", Context.MODE_PRIVATE)
 
-        // Vincular vistas
         tvScore = view.findViewById(R.id.tvScore)
         tvTimer = view.findViewById(R.id.tvTimer)
         tvHighScore = view.findViewById(R.id.tvHighScore)
         tvPregunta = view.findViewById(R.id.tvQuestion)
-        tvProgress = view.findViewById(R.id.tvProgress) // Vincular el nuevo contador
+        tvProgress = view.findViewById(R.id.tvProgress)
         tvFeedback = view.findViewById(R.id.tvFeedback)
         feedbackOverlay = view.findViewById(R.id.feedbackOverlay)
 
@@ -75,13 +73,11 @@ class GamesFragment : Fragment(R.layout.fragment_games) {
 
         btnReiniciar.setOnClickListener { iniciarJuego() }
 
-        // IMPORTANTE: Ahora pasamos el botón directamente, no el índice
         btnOpcion1.setOnClickListener { verificarRespuesta(btnOpcion1) }
         btnOpcion2.setOnClickListener { verificarRespuesta(btnOpcion2) }
         btnOpcion3.setOnClickListener { verificarRespuesta(btnOpcion3) }
         btnOpcion4.setOnClickListener { verificarRespuesta(btnOpcion4) }
 
-        // Cargar y barajar la lista completa de preguntas
         listaPreguntas = cargarPreguntasDesdeJson().shuffled()
 
         val record = sharedPreferences.getInt("RECORD_PUNTOS", 0)
@@ -91,9 +87,7 @@ class GamesFragment : Fragment(R.layout.fragment_games) {
     }
 
     private fun iniciarJuego() {
-        // Volver a barajar si reiniciamos
         listaPreguntas = listaPreguntas.shuffled()
-
         indicePreguntaActual = 0
         puntuacion = 0
         juegoTerminado = false
@@ -141,21 +135,14 @@ class GamesFragment : Fragment(R.layout.fragment_games) {
         if (indicePreguntaActual < listaPreguntas.size) {
             val pregunta = listaPreguntas[indicePreguntaActual]
 
-            // Actualizar textos
             tvPregunta.text = pregunta.pregunta
-
-            // Actualizar contador (Ej: "Pregunta 1 / 20")
             tvProgress.text = "Pregunta ${indicePreguntaActual + 1} / ${listaPreguntas.size}"
 
-            // LÓGICA DE BARAJAR RESPUESTAS
-            // 1. Obtenemos el texto correcto usando el índice original del JSON
             respuestaCorrectaActualString = pregunta.opciones[pregunta.respuestaCorrecta]
 
-            // 2. Creamos una copia de las opciones y las barajamos
             val opcionesBarajadas = pregunta.opciones.toMutableList()
             opcionesBarajadas.shuffle()
 
-            // 3. Asignamos los textos barajados a los botones
             btnOpcion1.text = opcionesBarajadas[0]
             btnOpcion2.text = opcionesBarajadas[1]
             btnOpcion3.text = opcionesBarajadas[2]
@@ -164,7 +151,6 @@ class GamesFragment : Fragment(R.layout.fragment_games) {
             restaurarColoresBotones()
             activarBotones(true)
             startQuestionTimer()
-
         } else {
             finalizarJuego()
         }
@@ -176,18 +162,23 @@ class GamesFragment : Fragment(R.layout.fragment_games) {
         timer?.cancel()
         activarBotones(false)
 
-        // Comprobamos si el texto del botón pulsado coincide con la respuesta correcta guardada
         val esCorrecto = (botonPulsado.text == respuestaCorrectaActualString)
 
         if (esCorrecto) {
             puntuacion += 10
             tvScore.text = puntuacion.toString()
             botonPulsado.backgroundTintList = ColorStateList.valueOf(Color.parseColor("#4CAF50"))
-            mostrarFeedbackOverlay(true, "¡CORRECTO!")
+
+            // Solo mostramos "¡CORRECTO!"
+            mostrarFeedbackOverlay(true, getString(R.string.correcto))
         } else {
             botonPulsado.backgroundTintList = ColorStateList.valueOf(Color.parseColor("#F44336"))
             animarError(botonPulsado)
-            mostrarFeedbackOverlay(false, "¡OH NO!")
+
+            // Mostramos "ERROR" + "La correcta era: X"
+            val mensajeError = getString(R.string.error) + "\n\n" +
+                    getString(R.string.la_correcta_era, respuestaCorrectaActualString)
+            mostrarFeedbackOverlay(false, mensajeError)
         }
 
         irASiguientePreguntaConRetraso()
@@ -195,16 +186,22 @@ class GamesFragment : Fragment(R.layout.fragment_games) {
 
     private fun manejarTiempoAgotado() {
         activarBotones(false)
-        mostrarFeedbackOverlay(false, "¡TIEMPO!")
+
+        // Mostramos "TIEMPO" + "La correcta era: X"
+        val mensajeTiempo = getString(R.string.tiempo_agotado) + "\n\n" +
+                getString(R.string.la_correcta_era, respuestaCorrectaActualString)
+
+        mostrarFeedbackOverlay(false, mensajeTiempo)
         irASiguientePreguntaConRetraso()
     }
 
     private fun irASiguientePreguntaConRetraso() {
+        // Aumentamos el tiempo a 2.5 segundos para que de tiempo a leer la corrección
         Handler(Looper.getMainLooper()).postDelayed({
             feedbackOverlay.visibility = View.GONE
             indicePreguntaActual++
             mostrarPregunta()
-        }, 1500)
+        }, 1100)
     }
 
     private fun animarError(view: View) {
@@ -217,34 +214,53 @@ class GamesFragment : Fragment(R.layout.fragment_games) {
         feedbackOverlay.visibility = View.VISIBLE
         tvFeedback.text = mensaje
         if (esCorrecto) {
-            tvFeedback.setTextColor(Color.parseColor("#4CAF50"))
+            tvFeedback.setTextColor(Color.parseColor("#2E8B57")) // Verde oscuro
         } else {
-            tvFeedback.setTextColor(Color.parseColor("#F44336"))
+            tvFeedback.setTextColor(Color.parseColor("#F44336")) // Rojo
         }
     }
 
+    // --- FUNCIÓN FINALIZAR JUEGO (MODIFICADA) ---
     private fun finalizarJuego() {
         juegoTerminado = true
         timer?.cancel()
-        feedbackOverlay.visibility = View.GONE
 
-        tvPregunta.text = "¡JUEGO COMPLETADO!"
-        tvProgress.text = "Finalizado"
-
-        activarBotones(false)
-        btnReiniciar.visibility = View.VISIBLE
-
+        // 1. Comprobamos si hay récord
         val recordActual = sharedPreferences.getInt("RECORD_PUNTOS", 0)
-        if (puntuacion > recordActual) {
+        val esNuevoRecord = puntuacion > recordActual
+
+        if (esNuevoRecord) {
+            // Guardamos el récord
             val editor = sharedPreferences.edit()
             editor.putInt("RECORD_PUNTOS", puntuacion)
             editor.apply()
             tvHighScore.text = puntuacion.toString()
 
-            tvFeedback.text = "¡NUEVO RÉCORD!"
-            tvFeedback.setTextColor(Color.parseColor("#D4AF37"))
+            // AQUI ESTÁ EL CAMBIO:
+            // Mostramos la animación de "NUEVO RÉCORD"
+            tvFeedback.text = getString(R.string.nuevo_record)
+            tvFeedback.setTextColor(Color.parseColor("#D4AF37")) // Dorado
             feedbackOverlay.visibility = View.VISIBLE
+
+            // Esperamos 3 segundos y LUEGO quitamos la animación y mostramos el final
+            Handler(Looper.getMainLooper()).postDelayed({
+                feedbackOverlay.visibility = View.GONE
+                mostrarPantallaFinal()
+            }, 3000)
+
+        } else {
+            // Si no hay récord, mostramos la pantalla final directamente
+            feedbackOverlay.visibility = View.GONE
+            mostrarPantallaFinal()
         }
+    }
+
+    private fun mostrarPantallaFinal() {
+        tvPregunta.text = getString(R.string.juego_completado)
+        tvProgress.text = getString(R.string.finalizado)
+
+        activarBotones(false)
+        btnReiniciar.visibility = View.VISIBLE
     }
 
     private fun activarBotones(activar: Boolean) {
