@@ -14,7 +14,7 @@
         android:text="Inventario del Museo"
         android:textSize="24sp"
         android:textStyle="bold"
-        android:textColor="#3E2723"
+        android:textColor="@color/egypt_text_primary"
         android:fontFamily="serif"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -30,14 +30,15 @@
         app:boxStrokeColor="@color/search_box_stroke"
         app:boxStrokeWidth="2dp"
         app:boxStrokeWidthFocused="3dp"
-        app:hintTextColor="#5D4037"
+        app:hintTextColor="@color/egypt_text_secondary"
+        app:placeholderTextColor="@color/egypt_text_secondary"
         app:layout_constraintTop_toBottomOf="@id/tvInventoryTitle">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etSearch"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="#3E2723"
+            android:textColor="@color/egypt_text_primary"
             android:backgroundTint="#00000000" />
     </com.google.android.material.textfield.TextInputLayout>
 

@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="8dp"
-    app:cardBackgroundColor="#FAF0E6"
+    app:cardBackgroundColor="@color/egypt_card"
     app:cardCornerRadius="12dp"
-    app:cardElevation="4dp"
-    app:strokeColor="#C5A000"
+    app:cardElevation="2dp"
+    app:strokeColor="@color/egypt_gold"
     app:strokeWidth="1dp">
 
     <LinearLayout
@@ -17,12 +17,18 @@
         android:orientation="horizontal"
         android:padding="8dp">
 
-        <ImageView
-            android:id="@+id/ivObject"
+        <com.google.android.material.card.MaterialCardView
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:scaleType="centerCrop"
-            tools:src="@tools:sample/avatars" />
+            app:cardCornerRadius="8dp"
+            app:cardElevation="0dp">
+            <ImageView
+                android:id="@+id/ivObject"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                tools:src="@tools:sample/avatars" />
+        </com.google.android.material.card.MaterialCardView>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -35,7 +41,7 @@
                 android:id="@+id/tvObjectName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="#3E2723"
+                android:textColor="@color/egypt_text_primary"
                 android:textSize="18sp"
                 android:textStyle="bold"
                 tools:text="Nombre del objeto" />
@@ -44,7 +50,7 @@
                 android:id="@+id/tvObjectCategory"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="#D4AF37"
+                android:textColor="@color/egypt_gold"
                 android:textSize="14sp"
                 android:textStyle="italic"
                 tools:text="Categoría" />

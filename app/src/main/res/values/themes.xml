@@ -1,13 +1,15 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.MuseoNPI" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:windowBackground">@color/egypt_bg</item>
+        <item name="colorPrimary">@color/egypt_gold</item>
+        <item name="colorOnPrimary">@color/egypt_text_primary</item>
+        <item name="colorSurface">@color/egypt_bg</item>
     </style>
 
     <style name="Theme.MuseoNPI" parent="Base.Theme.MuseoNPI" />
 
-    <style name="CustomAlertDialog" parent="Theme.MaterialComponents.Light.Dialog.Alert">
+    <style name="CustomAlertDialog" parent="Theme.MaterialComponents.DayNight.Dialog.Alert">
         <item name="android:windowBackground">@android:color/transparent</item>
         <item name="android:windowMinWidthMajor">90%</item>
         <item name="android:windowMinWidthMinor">90%</item>

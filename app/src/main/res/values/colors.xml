@@ -2,5 +2,14 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="gold_museum">#C5A000</color>
+
+    <!-- Paleta Egipto (Modo Claro) -->
+    <color name="egypt_bg">#FAF0E6</color>
+    <color name="egypt_card">#FFFEF7</color>
+    <color name="egypt_gold">#C5A000</color>
+    <color name="egypt_gold_dark">#D4AF37</color>
+    <color name="egypt_text_primary">#3E2723</color>
+    <color name="egypt_text_secondary">#5D4037</color>
+    <color name="egypt_accent">#A52A2A</color>
+    <color name="egypt_button_bg">#FFF8E1</color>
 </resources>
