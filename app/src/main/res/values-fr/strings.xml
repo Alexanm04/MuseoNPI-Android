@@ -10,4 +10,10 @@
     <string name="puntos_0">POINTS</string>
     <string name="correcto">CORRECT !</string>
     <string name="imagen_del_objeto">Image représentative de l\'objet du musée</string>
+    <string name="categoria_label">Catégorie : %1$s</string>
+    <string name="aprender_mas_obra">En savoir plus sur cette œuvre</string>
+    <string name="detalles_tecnicos_label">Détails techniques</string>
+    <string name="aprender_mas_titulo">En savoir plus sur l\'œuvre</string>
+    <string name="mostrar_mas_info">Afficher plus d\'informations</string>
+    <string name="cerrar">Fermer</string>
 </resources>

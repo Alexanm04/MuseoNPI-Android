@@ -17,7 +17,6 @@
             android:id="@+id/tvDialogTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Título del Diálogo"
             android:textColor="#3E2723"
             android:textSize="22sp"
             android:textStyle="bold"
@@ -37,8 +36,7 @@
             android:layout_height="wrap_content"
             android:textColor="#5D4037"
             android:textSize="17sp"
-            android:lineSpacingExtra="4dp"
-            android:text="Aquí va el contenido detallado..." />
+            android:lineSpacingExtra="4dp" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnDialogMore"
@@ -47,7 +45,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="16dp"
-            android:text="Mostrar más información"
+            android:text="@string/mostrar_mas_info"
             android:textColor="#D4AF37"
             android:textStyle="bold" />
 
@@ -56,7 +54,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="Cerrar"
+            android:text="@string/cerrar"
             android:backgroundTint="#3E2723"
             android:textColor="#FFFFFF"
             app:cornerRadius="12dp" />
