@@ -27,7 +27,7 @@ class ProfileFragment : Fragment() {
     private lateinit var layoutAuthenticated: LinearLayout
 
     private var isInitializing = true
-    private var pendingRecreate = false
+
 
     private lateinit var etLoginUser: EditText
     private lateinit var etLoginPass: EditText
@@ -55,10 +55,21 @@ class ProfileFragment : Fragment() {
         val view = inflater.inflate(R.layout.fragment_profile, container, false)
         
         initViews(view)
+        
+        if (savedInstanceState != null && savedInstanceState.getBoolean("IS_SETTINGS_OPEN", false)) {
+            layoutSettingsPanel.visibility = View.VISIBLE
+            btnSettingsToggle.visibility = View.GONE
+        }
+        
         setupListeners()
         updateUI()
 
         return view
+    }
+
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        outState.putBoolean("IS_SETTINGS_OPEN", layoutSettingsPanel.visibility == View.VISIBLE)
     }
 
     private fun initViews(view: View) {
@@ -89,7 +100,7 @@ class ProfileFragment : Fragment() {
 
     private fun setupSettings() {
         isInitializing = true
-        pendingRecreate = false
+        // pendingRecreate = false // No longer needed
         
         // --- Language ---
         val languages = arrayOf("Español", "English")
@@ -108,7 +119,8 @@ class ProfileFragment : Fragment() {
                 val selectedCode = if (position == 0) "es" else "en"
                 if (selectedCode != SettingsManager.getLanguage(requireContext())) {
                     SettingsManager.setLanguage(requireContext(), selectedCode)
-                    pendingRecreate = true
+                    // Immediate apply
+                    requireActivity().recreate()
                 }
             }
             override fun onNothingSelected(parent: AdapterView<*>) {}
@@ -125,21 +137,29 @@ class ProfileFragment : Fragment() {
 
         seekbarFontSize.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {
             override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
-                if (isInitializing) return
-                if (fromUser) {
-                     val newScale = when(progress) {
-                         0 -> 0.85f
-                         2 -> 1.15f
-                         else -> 1.0f
-                     }
-                     if (newScale != SettingsManager.getFontScale(requireContext())) {
-                         SettingsManager.setFontScale(requireContext(), newScale)
-                         pendingRecreate = true
-                     }
-                }
+                // For Seekbar, we might want to wait for "StopTracking" to avoid spamming recreate,
+                // BUT user requested "when I change... immediately". 
+                // However, spamming recreate on every tick of slide is bad UX and performance.
+                // Let's do it on StopTrackingTouch for sliding, or debounce. 
+                // But simplified requirement interpretation: Apply on change. 
+                // To be safe and usable, I'll apply on StopTrackingTouch OR explicit click.
+                // Actually, standard behavior for font size sliders is often "apply on release".
+                // I will move logic to onStopTrackingTouch to prevent crash/lag loop while sliding.
             }
             override fun onStartTrackingTouch(seekBar: SeekBar?) {}
-            override fun onStopTrackingTouch(seekBar: SeekBar?) {}
+            override fun onStopTrackingTouch(seekBar: SeekBar?) {
+                 if (seekBar == null) return
+                 val progress = seekBar.progress
+                 val newScale = when(progress) {
+                     0 -> 0.85f
+                     2 -> 1.15f
+                     else -> 1.0f
+                 }
+                 if (newScale != SettingsManager.getFontScale(requireContext())) {
+                     SettingsManager.setFontScale(requireContext(), newScale)
+                     requireActivity().recreate()
+                 }
+            }
         })
 
         // --- Theme ---
@@ -159,8 +179,9 @@ class ProfileFragment : Fragment() {
                 else -> 0
             }
             if (newMode != SettingsManager.getThemeMode(requireContext())) {
-                SettingsManager.saveThemeMode(requireContext(), newMode)
-                pendingRecreate = true
+                SettingsManager.setThemeMode(requireContext(), newMode)
+                // Immediate apply
+                requireActivity().recreate()
             }
         }
         
@@ -170,9 +191,6 @@ class ProfileFragment : Fragment() {
     private fun closeSettings() {
         layoutSettingsPanel.visibility = View.GONE
         btnSettingsToggle.visibility = View.VISIBLE
-        if (pendingRecreate) {
-            requireActivity().recreate()
-        }
     }
 
     private var startBiometricEnrollment = false
@@ -251,7 +269,6 @@ class ProfileFragment : Fragment() {
         btnSettingsToggle.setOnClickListener {
             layoutSettingsPanel.visibility = View.VISIBLE
             btnSettingsToggle.visibility = View.GONE
-            pendingRecreate = false // Reset pending state on open
         }
 
         btnBackSettings.setOnClickListener {
