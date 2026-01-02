@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Standard dimensions -->
+    <dimen name="icon_size_medium">40dp</dimen>
+    <dimen name="icon_size_small">24dp</dimen>
+    <!-- Scalable dimensions hack for specific icons -->
+    <dimen name="icon_size_medium_sp">40sp</dimen>
+    <dimen name="icon_size_small_sp">24sp</dimen>
+</resources>

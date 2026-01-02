@@ -96,6 +96,55 @@ class ProfileFragment : Fragment() {
         rbThemeLight = view.findViewById(R.id.rb_theme_light)
         rbThemeDark = view.findViewById(R.id.rb_theme_dark)
         rbThemeColorblind = view.findViewById(R.id.rb_theme_colorblind)
+
+        resizeIcons()
+    }
+
+    private fun resizeIcons() {
+        val fontScale = SettingsManager.getFontScale(requireContext())
+        
+        // Explicit Step Scaling Logic for Icons in Profile
+        // Small: < 0.9
+        // Large: > 1.1
+        // Normal: else
+        
+        // Base Sizes (Standard)
+        // Settings Toggle: 48dp
+        // Back Arrow: 40dp
+        // Fingerprint: 64dp
+        
+        // Multipliers
+        val multiplier = when {
+            fontScale > 1.1f -> 1.5f // 50% bigger for Large
+            fontScale < 0.9f -> 0.8f // 20% smaller for Small
+            else -> 1.0f
+        }
+
+        // Helper to scale generic view
+        fun scaleView(view: View, baseSizeDp: Float) {
+            val sizePx = android.util.TypedValue.applyDimension(
+                android.util.TypedValue.COMPLEX_UNIT_DIP,
+                baseSizeDp * multiplier,
+                resources.displayMetrics
+            ).toInt()
+            val params = view.layoutParams
+            params.width = sizePx
+            params.height = sizePx
+            view.layoutParams = params
+        }
+
+        // Apply to Settings Toggle (Base 48dp)
+        scaleView(btnSettingsToggle, 48f)
+        
+        // Apply to Fingerprint/Lock Icon (Base 64dp)
+        // Note: It's inside layout_login, verify valid reference
+        val btnFinger = layoutLogin.findViewById<ImageButton>(R.id.btn_fingerprint)
+        if (btnFinger != null) {
+            scaleView(btnFinger, 64f)
+        }
+        
+        // Apply to Back Settings (Base 40dp)
+        scaleView(btnBackSettings, 40f)
     }
 
     private fun setupSettings() {

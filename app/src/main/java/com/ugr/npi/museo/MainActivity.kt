@@ -11,8 +11,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         
         // Apply Theme
+        // Apply Theme
         val themeMode = SettingsManager.getThemeMode(this)
-        SettingsManager.applyTheme(themeMode)
+        SettingsManager.applyTheme(themeMode) // Sets Night Mode (Light/Dark/System)
+        
+        // If Deuteranopia, we explicitly set the theme style *regardless* of night mode (force light/night no + custom style)
+        val themeResId = SettingsManager.getThemeResId(this)
+        setTheme(themeResId)
 
         setContentView(R.layout.activity_main)
 

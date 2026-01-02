@@ -24,6 +24,14 @@ object SettingsManager {
         return getPreferences(context).getString(KEY_LANGUAGE, "es") ?: "es"
     }
 
+    fun getThemeResId(context: Context): Int {
+        val mode = getThemeMode(context) // 0: Standard, 1: Dark (via NightMode), 2: Deuteranopia
+        return when (mode) {
+             2 -> R.style.Theme_MuseoNPI_Deuteranopia
+             else -> R.style.Theme_MuseoNPI
+        }
+    }
+
     fun setFontScale(context: Context, scale: Float) {
         getPreferences(context).edit().putFloat(KEY_FONT_Scale, scale).apply()
         // Note: Applying font scale dynamically usually requires recreating the activity or applying context wrapper
@@ -50,7 +58,7 @@ object SettingsManager {
         when (mode) {
             0 -> androidx.appcompat.app.AppCompatDelegate.setDefaultNightMode(androidx.appcompat.app.AppCompatDelegate.MODE_NIGHT_NO)
             1 -> androidx.appcompat.app.AppCompatDelegate.setDefaultNightMode(androidx.appcompat.app.AppCompatDelegate.MODE_NIGHT_YES) // Dark
-            2 -> androidx.appcompat.app.AppCompatDelegate.setDefaultNightMode(androidx.appcompat.app.AppCompatDelegate.MODE_NIGHT_NO) // Colorblind: For now just Light, logic elsewhere?
+            2 -> androidx.appcompat.app.AppCompatDelegate.setDefaultNightMode(androidx.appcompat.app.AppCompatDelegate.MODE_NIGHT_NO) // Colorblind (Custom Theme, Force Light base)
             else -> androidx.appcompat.app.AppCompatDelegate.setDefaultNightMode(androidx.appcompat.app.AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM)
         }
     }

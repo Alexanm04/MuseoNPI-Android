@@ -6,9 +6,33 @@
         <item name="colorPrimary">@color/egypt_gold</item>
         <item name="colorOnPrimary">@color/egypt_text_primary</item>
         <item name="colorSurface">@color/egypt_bg</item>
+        <item name="colorControlNormal">@color/egypt_text_primary</item>
     </style>
 
     <style name="Theme.MuseoNPI" parent="Base.Theme.MuseoNPI" />
+
+    <style name="Theme.MuseoNPI.Deuteranopia" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/deut_bg</item>
+        <item name="colorPrimary">@color/deut_primary</item>
+        <item name="colorOnPrimary">@color/deut_on_primary</item>
+        <item name="colorSurface">@color/deut_surface</item>
+        <item name="colorOnSurface">@color/deut_text_primary</item>
+        <item name="android:colorBackground">@color/deut_bg</item>
+        <item name="colorOnBackground">@color/deut_text_primary</item>
+        
+        <item name="android:textColorPrimary">@color/deut_text_primary</item>
+        <item name="android:textColorSecondary">@color/deut_accent</item>
+        <item name="android:textColor">@color/deut_text_primary</item>
+        
+        <!-- Ensure buttons pick up high contrast -->
+        <item name="colorSecondary">@color/deut_accent</item>
+        <item name="colorOnSecondary">@color/deut_text_primary</item>
+        
+        <item name="colorControlNormal">@color/deut_text_primary</item> <!-- Icons white -->
+        <item name="colorControlActivated">@color/deut_primary</item> <!-- Active radio/checkbox -->
+        
+        <item name="android:itemTextAppearance">@style/BottomNavTextNormal</item>
+    </style>
 
     <style name="CustomAlertDialog" parent="Theme.MaterialComponents.DayNight.Dialog.Alert">
         <item name="android:windowBackground">@android:color/transparent</item>

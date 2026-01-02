@@ -12,4 +12,13 @@
     <color name="egypt_text_secondary">#5D4037</color>
     <color name="egypt_accent">#A52A2A</color>
     <color name="egypt_button_bg">#FFF8E1</color>
+    
+    <!-- Deuteranomaly / High Contrast Palette -->
+    <!-- High contrast blue and yellow/gold are easy to distinguish for deuteranomaly -->
+    <color name="deut_bg">#001133</color> <!-- Very Dark Blue for high contrast bg -->
+    <color name="deut_surface">#002244</color>
+    <color name="deut_primary">#FFD700</color> <!-- Gold/Yellow -->
+    <color name="deut_on_primary">#000000</color> <!-- Black text on gold -->
+    <color name="deut_text_primary">#FFFFFF</color> <!-- White text on dark bg -->
+    <color name="deut_accent">#00BFFF</color> <!-- Bright Blue -->
 </resources>

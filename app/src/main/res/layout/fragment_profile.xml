@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ProfileFragment">
@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fillViewport="true"
-        android:paddingTop="50dp">
+        android:paddingTop="120dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -63,6 +63,7 @@
                     android:layout_width="64sp"
                     android:layout_height="64sp"
                     android:src="@android:drawable/ic_lock_lock" 
+                    app:tint="?attr/colorControlNormal"
                     android:background="?attr/selectableItemBackgroundBorderless"
                     android:layout_gravity="center"
                     android:layout_marginTop="16dp"
@@ -177,9 +178,10 @@
         android:layout_width="48sp"
         android:layout_height="48sp"
         android:layout_gravity="top|end"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="65dp"
         android:layout_marginEnd="16dp"
         android:src="@drawable/ic_settings"
+        app:tint="?attr/colorControlNormal"
         android:background="?attr/selectableItemBackgroundBorderless"
         android:contentDescription="Configuración" />
 
@@ -210,6 +212,7 @@
                 android:layout_alignParentStart="true"
                 android:layout_centerVertical="true"
                 android:src="@drawable/ic_arrow_back"
+                app:tint="?attr/colorControlNormal"
                 android:background="?attr/selectableItemBackgroundBorderless"
                 android:contentDescription="Volver" />
 
@@ -295,19 +298,22 @@
                 android:id="@+id/rb_theme_light"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Claro"/>
+                android:text="Claro"
+                android:textColor="?android:attr/textColorPrimary"/>
             
             <RadioButton
                 android:id="@+id/rb_theme_dark"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Oscuro"/>
+                android:text="Oscuro"
+                android:textColor="?android:attr/textColorPrimary"/>
             
             <RadioButton
                 android:id="@+id/rb_theme_colorblind"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Alto Contraste / Daltónico"/>
+                android:text="Deuteranopía (Daltónico)"
+                android:textColor="?android:attr/textColorPrimary"/>
         </RadioGroup>
 
     </LinearLayout>
