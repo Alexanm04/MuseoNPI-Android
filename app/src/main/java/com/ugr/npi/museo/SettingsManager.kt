@@ -63,7 +63,7 @@ object SettingsManager {
         val locale = Locale.forLanguageTag(languageCode)
         Locale.setDefault(locale)
 
-        val config = context.resources.configuration
+        val config = Configuration(context.resources.configuration)
         config.setLocale(locale)
         config.fontScale = fontScale
         

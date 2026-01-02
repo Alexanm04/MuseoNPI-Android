@@ -130,7 +130,7 @@ class ProfileFragment : Fragment() {
         val currentScale = SettingsManager.getFontScale(requireContext())
         val progress = when {
              currentScale < 0.9f -> 0
-             currentScale > 1.1f -> 2
+             currentScale > 1.2f -> 2
              else -> 1
         }
         seekbarFontSize.progress = progress
@@ -151,8 +151,8 @@ class ProfileFragment : Fragment() {
                  if (seekBar == null) return
                  val progress = seekBar.progress
                  val newScale = when(progress) {
-                     0 -> 0.85f
-                     2 -> 1.15f
+                     0 -> 0.80f
+                     2 -> 1.30f
                      else -> 1.0f
                  }
                  if (newScale != SettingsManager.getFontScale(requireContext())) {

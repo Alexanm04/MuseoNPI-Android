@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.MuseoNPI" parent="Theme.Material3.DayNight.NoActionBar">
@@ -13,5 +14,18 @@
         <item name="android:windowBackground">@android:color/transparent</item>
         <item name="android:windowMinWidthMajor">90%</item>
         <item name="android:windowMinWidthMinor">90%</item>
+    </style>
+
+    <!-- Navigation Styles with fixed sizes (dp) or scaled (sp) - Using explicit sizes to force diff -->
+    <style name="BottomNavTextSmall">
+        <item name="android:textSize">12sp</item>
+    </style>
+    
+    <style name="BottomNavTextNormal">
+        <item name="android:textSize">16sp</item>
+    </style>
+    
+    <style name="BottomNavTextLarge">
+        <item name="android:textSize">20sp</item>
     </style>
 </resources>

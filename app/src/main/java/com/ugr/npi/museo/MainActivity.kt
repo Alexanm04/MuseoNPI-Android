@@ -28,12 +28,44 @@ class MainActivity : AppCompatActivity() {
         val bottomNav = findViewById<BottomNavigationView>(R.id.bottom_navigation)
         // 4. Conectamos los botones con la navegación
         bottomNav.setupWithNavController(navController)
+
+        // Manual scaling for explicitly distinct steps as requested by user
+        val fontScale = SettingsManager.getFontScale(this)
+        
+        // Icon Size Calculation (Explicit Steps)
+        // User wants "Big" to be noticeably bigger.
+        // Normal = 36dp (requested bigger default)
+        // Small = 28dp
+        // Large = 48dp
+        val iconSizeDp = when {
+            fontScale > 1.1f -> 48f
+            fontScale < 0.9f -> 28f
+            else -> 36f
+        }
+        
+        val iconSizePx = android.util.TypedValue.applyDimension(
+            android.util.TypedValue.COMPLEX_UNIT_DIP, // Use DIP here effectively since we manually chose size based on scale layer
+            iconSizeDp,
+            resources.displayMetrics
+        ).toInt()
+        
+        bottomNav.itemIconSize = iconSizePx
+        
+        // Text Style Selection
+        val textStyleRes = when {
+            fontScale > 1.1f -> R.style.BottomNavTextLarge
+            fontScale < 0.9f -> R.style.BottomNavTextSmall
+            else -> R.style.BottomNavTextNormal
+        }
+        
+        bottomNav.itemTextAppearanceActive = textStyleRes
+        bottomNav.itemTextAppearanceInactive = textStyleRes
     }
 
     override fun attachBaseContext(newBase: android.content.Context) {
         // Apply Language
         val lang = SettingsManager.getLanguage(newBase)
-        val locale = java.util.Locale(lang)
+        val locale = java.util.Locale.forLanguageTag(lang)
         val config = android.content.res.Configuration(newBase.resources.configuration)
         java.util.Locale.setDefault(locale)
         config.setLocale(locale)
