@@ -55,6 +55,9 @@ dependencies {
     // ViewModel & LiveData
     implementation(libs.androidx.lifecycle.viewmodel)
     implementation(libs.androidx.lifecycle.livedata)
+    
+    // Biometric
+    implementation("androidx.biometric:biometric:1.1.0")
 }
 
 kotlin {
