@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondo_juego"
+    android:background="?attr/gameBackground"
     android:padding="16dp">
 
     <LinearLayout
@@ -21,8 +21,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:layout_margin="4dp"
-            app:cardBackgroundColor="#FAF0E6"
-            app:strokeColor="#C5A000"
+            app:cardBackgroundColor="?attr/gameCardBackground"
+            app:strokeColor="?attr/gameStrokeColor"
             app:strokeWidth="2dp"
             app:cardCornerRadius="8dp"
             app:cardElevation="6dp">
@@ -38,7 +38,7 @@
                     android:text="@string/r_cord"
                     android:textSize="10sp"
                     android:textStyle="bold"
-                    android:textColor="#5D4037"/>
+                    android:textColor="?attr/gameTextSecondary"/>
                 <TextView
                     android:id="@+id/tvHighScore"
                     android:layout_width="wrap_content"
@@ -46,7 +46,7 @@
                     android:text="0"
                     android:textSize="20sp"
                     android:textStyle="bold"
-                    android:textColor="#3E2723"/>
+                    android:textColor="?attr/gameTextPrimary"/>
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 
@@ -55,8 +55,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:layout_margin="4dp"
-            app:cardBackgroundColor="#FFF8E1"
-            app:strokeColor="#D4AF37"
+            app:cardBackgroundColor="?attr/gameCardBackground"
+            app:strokeColor="?attr/gameStrokeColor"
             app:strokeWidth="4dp"
             app:cardCornerRadius="8dp"
             app:cardElevation="8dp">
@@ -72,7 +72,7 @@
                     android:text="@string/tiempo"
                     android:textSize="10sp"
                     android:textStyle="bold"
-                    android:textColor="#D4AF37"/>
+                    android:textColor="?attr/gameTextSecondary"/>
                 <TextView
                     android:id="@+id/tvTimer"
                     android:layout_width="wrap_content"
@@ -80,7 +80,7 @@
                     android:text="30"
                     android:textSize="24sp"
                     android:textStyle="bold"
-                    android:textColor="#FF6F00"/>
+                    android:textColor="?attr/gameStrokeColor"/>
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 
@@ -89,8 +89,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:layout_margin="4dp"
-            app:cardBackgroundColor="#FAF0E6"
-            app:strokeColor="#C5A000"
+            app:cardBackgroundColor="?attr/gameCardBackground"
+            app:strokeColor="?attr/gameStrokeColor"
             app:strokeWidth="2dp"
             app:cardCornerRadius="8dp"
             app:cardElevation="6dp">
@@ -106,7 +106,7 @@
                     android:text="@string/puntos_0"
                     android:textSize="10sp"
                     android:textStyle="bold"
-                    android:textColor="#5D4037"/>
+                    android:textColor="?attr/gameTextSecondary"/>
                 <TextView
                     android:id="@+id/tvScore"
                     android:layout_width="wrap_content"
@@ -114,7 +114,7 @@
                     android:text="0"
                     android:textSize="20sp"
                     android:textStyle="bold"
-                    android:textColor="#2E7D32"/>
+                    android:textColor="?attr/gameTextPrimary"/>
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
     </LinearLayout>
@@ -126,7 +126,7 @@
         android:layout_marginTop="16dp"
         app:cardCornerRadius="12dp"
         app:cardElevation="8dp"
-        app:cardBackgroundColor="#FFFEF7"
+        app:cardBackgroundColor="?attr/gameCardBackground"
         app:layout_constraintTop_toBottomOf="@id/headerLayout"
         app:layout_constraintBottom_toTopOf="@id/layoutBotones"
         app:layout_constraintVertical_bias="0.1">
@@ -144,7 +144,7 @@
                 android:text="Pregunta 1/20"
                 android:gravity="center"
                 android:textSize="14sp"
-                android:textColor="#D4AF37"
+                android:textColor="?attr/gameTextSecondary"
                 android:textStyle="bold"
                 android:layout_marginBottom="8dp"/>
 
@@ -156,7 +156,7 @@
                 android:textSize="22sp"
                 android:textStyle="bold"
                 android:gravity="center"
-                android:textColor="#3E2723"
+                android:textColor="?attr/gameTextPrimary"
                 android:fontFamily="serif"/>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
@@ -190,9 +190,9 @@
                 android:textSize="20sp"
                 android:insetTop="0dp"
                 android:insetBottom="0dp"
-                android:textColor="@color/white"
+                android:textColor="?attr/gameOption1Text"
                 android:textStyle="bold"
-                android:backgroundTint="#A52A2A"
+                android:backgroundTint="?attr/gameOption1Bg"
                 app:elevation="8dp"/>
 
             <com.google.android.material.button.MaterialButton
@@ -205,9 +205,9 @@
                 android:textSize="20sp"
                 android:insetTop="0dp"
                 android:insetBottom="0dp"
-                android:textColor="@color/white"
+                android:textColor="?attr/gameOption2Text"
                 android:textStyle="bold"
-                android:backgroundTint="#1C39BB"
+                android:backgroundTint="?attr/gameOption2Bg"
                 app:elevation="8dp"/>
         </LinearLayout>
 
@@ -229,9 +229,9 @@
                 android:textSize="20sp"
                 android:insetTop="0dp"
                 android:insetBottom="0dp"
-                android:textColor="@color/white"
+                android:textColor="?attr/gameOption3Text"
                 android:textStyle="bold"
-                android:backgroundTint="#D4AF37"
+                android:backgroundTint="?attr/gameOption3Bg"
                 app:elevation="8dp"/>
 
             <com.google.android.material.button.MaterialButton
@@ -244,9 +244,9 @@
                 android:textSize="20sp"
                 android:insetTop="0dp"
                 android:insetBottom="0dp"
-                android:textColor="@color/white"
+                android:textColor="?attr/gameOption4Text"
                 android:textStyle="bold"
-                android:backgroundTint="#2E8B57"
+                android:backgroundTint="?attr/gameOption4Bg"
                 app:elevation="8dp"/>
         </LinearLayout>
     </LinearLayout>
@@ -255,7 +255,7 @@
         android:id="@+id/feedbackOverlay"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#EEFFF8DC"
+        android:background="?attr/colorSurface"
         android:visibility="gone"
         android:elevation="20dp">
 
@@ -268,7 +268,7 @@
             android:text="@string/correcto"
             android:textSize="36sp"
             android:textStyle="bold"
-            android:textColor="#2E8B57"
+            android:textColor="?attr/gameStrokeColor"
             android:padding="20dp"
             android:shadowColor="#000000"
             android:shadowDx="2"
@@ -281,15 +281,15 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/jugar_otra_vez"
-        android:backgroundTint="#FFF8E1"
-        android:textColor="#3E2723"
+        android:backgroundTint="?attr/gameCardBackground"
+        android:textColor="?attr/gameTextPrimary"
         android:padding="25dp"
         android:textSize="22sp"
         android:textStyle="bold"
         android:visibility="gone"
         android:layout_margin="20dp"
         app:cornerRadius="30dp"
-        app:strokeColor="#C5A000"
+        app:strokeColor="?attr/gameStrokeColor"
         app:strokeWidth="3dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"

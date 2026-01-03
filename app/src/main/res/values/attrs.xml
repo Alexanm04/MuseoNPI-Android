@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Game Option Colors -->
+    <attr name="gameOption1Bg" format="color|reference" />
+    <attr name="gameOption2Bg" format="color|reference" />
+    <attr name="gameOption3Bg" format="color|reference" />
+    <attr name="gameOption4Bg" format="color|reference" />
+    
+    <!-- Game Option Text Colors (to ensure contrast) -->
+    <attr name="gameOption1Text" format="color|reference" />
+    <attr name="gameOption2Text" format="color|reference" />
+    <attr name="gameOption3Text" format="color|reference" />
+    <attr name="gameOption4Text" format="color|reference" />
+
+    <!-- General Game UI -->
+    <attr name="gameBackground" format="color|reference" />
+    <attr name="gameCardBackground" format="color|reference" />
+    <attr name="gameTextPrimary" format="color|reference" />
+    <attr name="gameTextSecondary" format="color|reference" />
+    <attr name="gameStrokeColor" format="color|reference" />
+    
+</resources>

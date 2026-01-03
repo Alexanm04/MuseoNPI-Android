@@ -7,6 +7,22 @@
         <item name="colorOnPrimary">@color/egypt_text_primary</item>
         <item name="colorSurface">@color/egypt_bg</item>
         <item name="colorControlNormal">@color/egypt_text_primary</item>
+        
+        <!-- Game Attributes (Normal) -->
+        <item name="gameOption1Bg">@color/game_opt1_n</item>
+        <item name="gameOption1Text">@color/text_white</item>
+        <item name="gameOption2Bg">@color/game_opt2_n</item>
+        <item name="gameOption2Text">@color/text_white</item>
+        <item name="gameOption3Bg">@color/game_opt3_n</item>
+        <item name="gameOption3Text">@color/text_white</item>
+        <item name="gameOption4Bg">@color/game_opt4_n</item>
+        <item name="gameOption4Text">@color/text_white</item>
+        
+        <item name="gameBackground">@drawable/fondo_juego</item>
+        <item name="gameCardBackground">@color/egypt_card</item>
+        <item name="gameTextPrimary">@color/egypt_text_primary</item>
+        <item name="gameTextSecondary">@color/egypt_text_secondary</item>
+        <item name="gameStrokeColor">@color/egypt_gold</item>
     </style>
 
     <style name="Theme.MuseoNPI" parent="Base.Theme.MuseoNPI" />
@@ -23,6 +39,7 @@
         <item name="android:textColorPrimary">@color/deut_text_primary</item>
         <item name="android:textColorSecondary">@color/deut_accent</item>
         <item name="android:textColor">@color/deut_text_primary</item>
+        <item name="android:textColorHint">@color/deut_hint</item>
         
         <!-- Ensure buttons pick up high contrast -->
         <item name="colorSecondary">@color/deut_accent</item>
@@ -32,6 +49,32 @@
         <item name="colorControlActivated">@color/deut_primary</item> <!-- Active radio/checkbox -->
         
         <item name="android:itemTextAppearance">@style/BottomNavTextNormal</item>
+        
+        <!-- Fix for BottomNav Indicator contrast -->
+        <item name="colorSecondaryContainer">@color/deut_indicator_pill</item>
+        <item name="colorOnSecondaryContainer">@color/deut_primary</item>
+        
+        <item name="bottomNavigationStyle">@style/Widget.MuseoNPI.BottomNavigationView.Deuteranopia</item>
+
+        <!-- Game Attributes (Deuteranopia) -->
+        <item name="gameOption1Bg">@color/game_opt1_d</item>
+        <item name="gameOption1Text">@color/text_white</item>
+        <item name="gameOption2Bg">@color/game_opt2_d</item>
+        <item name="gameOption2Text">@color/text_white</item>
+        <item name="gameOption3Bg">@color/game_opt3_d</item>
+        <item name="gameOption3Text">@color/text_black</item>
+        <item name="gameOption4Bg">@color/game_opt4_d</item>
+        <item name="gameOption4Text">@color/text_black</item>
+        
+        <item name="gameBackground">@color/deut_bg</item>
+        <item name="gameCardBackground">@color/deut_surface</item>
+        <item name="gameTextPrimary">@color/deut_text_primary</item>
+        <item name="gameTextSecondary">@color/deut_accent</item>
+        <item name="gameStrokeColor">@color/deut_primary</item>
+    </style>
+
+    <style name="Widget.MuseoNPI.BottomNavigationView.Deuteranopia" parent="Widget.Material3.BottomNavigationView">
+        <item name="android:background">@color/deut_bg</item>
     </style>
 
     <style name="CustomAlertDialog" parent="Theme.MaterialComponents.DayNight.Dialog.Alert">

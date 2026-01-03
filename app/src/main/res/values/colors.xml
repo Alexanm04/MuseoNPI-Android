@@ -21,4 +21,23 @@
     <color name="deut_on_primary">#000000</color> <!-- Black text on gold -->
     <color name="deut_text_primary">#FFFFFF</color> <!-- White text on dark bg -->
     <color name="deut_accent">#00BFFF</color> <!-- Bright Blue -->
+    <color name="deut_indicator_pill">#1A4060</color> <!-- Slightly lighter blue for indicator pill -->
+    <color name="deut_hint">#AAAAAA</color> <!-- Light Grey for input hints in dark mode -->
+    
+    <!-- Game Colors (Normal / Egipcio) -->
+    <color name="game_opt1_n">#A52A2A</color> <!-- Brown/Red -->
+    <color name="game_opt2_n">#1C39BB</color> <!-- Blue -->
+    <color name="game_opt3_n">#D4AF37</color> <!-- Gold -->
+    <color name="game_opt4_n">#2E8B57</color> <!-- Green -->
+    
+    <!-- Game Colors (Deuteranopia Safe) -->
+    <!-- Avoid Red/Green confusion. Use: Dark Grey, Blue, Yellow, Light Cyan -->
+    <color name="game_opt1_d">#424242</color> <!-- Dark Grey -->
+    <color name="game_opt2_d">#1C39BB</color> <!-- Blue (Same) -->
+    <color name="game_opt3_d">#FFD700</color> <!-- Yellow (Bright) -->
+    <color name="game_opt4_d">#00BCD4</color> <!-- Cyan -->
+
+    <!-- Text Colors for Game Buttons -->
+    <color name="text_white">#FFFFFF</color>
+    <color name="text_black">#000000</color>
 </resources>

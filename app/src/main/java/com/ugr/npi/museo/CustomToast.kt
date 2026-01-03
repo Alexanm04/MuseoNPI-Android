@@ -8,6 +8,7 @@ import android.widget.Toast
 import android.view.Gravity
 
 object CustomToast {
+    @Suppress("DEPRECATION")
     fun show(context: Context, message: String, isError: Boolean = false) {
         val inflater = LayoutInflater.from(context)
         val layout = inflater.inflate(R.layout.custom_toast, null)
