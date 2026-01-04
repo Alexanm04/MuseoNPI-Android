@@ -10,7 +10,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         
-        // Apply Theme
+        // Crucial: Apply Theme BEFORE setContentView
+        // This handles the specialized "Deuteranopia" or Night modes set in SettingsManager
         // Apply Theme
         val themeMode = SettingsManager.getThemeMode(this)
         SettingsManager.applyTheme(themeMode) // Sets Night Mode (Light/Dark/System)
@@ -67,8 +68,12 @@ class MainActivity : AppCompatActivity() {
         bottomNav.itemTextAppearanceInactive = textStyleRes
     }
 
+    /**
+     * Helper to attach the Base Context with updated Configuration.
+     * Required for instant Language and Font Scale changes without restarting the whole app process.
+     */
     override fun attachBaseContext(newBase: android.content.Context) {
-        // Apply Language
+        // Apply Language & Font Scale via wrapper
         val lang = SettingsManager.getLanguage(newBase)
         val locale = java.util.Locale.forLanguageTag(lang)
         val config = android.content.res.Configuration(newBase.resources.configuration)

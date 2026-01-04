@@ -10,6 +10,11 @@ import android.widget.RadioGroup
 import android.widget.SeekBar
 import androidx.fragment.app.DialogFragment
 
+/**
+ * Dialog Fragment that presents the Settings UI.
+ * Allows users to change Language, Font Scale, and Theme.
+ * Changes are applied via `SettingsManager` and require Activity recreation.
+ */
 class SettingsDialogFragment : DialogFragment() {
 
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
@@ -64,7 +69,7 @@ class SettingsDialogFragment : DialogFragment() {
             // TODO: Implement theme switch logic
 
             dismiss()
-            // Recreate activity to apply changes
+            // Recreate activity to apply changes immediately
             requireActivity().recreate()
         }
 

@@ -7,6 +7,10 @@ import android.widget.TextView
 import android.widget.Toast
 import android.view.Gravity
 
+/**
+ * Utility helper to show custom styled toasts.
+ * Replaces standard Android toasts with a custom layout (Icon + Text) defined in `custom_toast.xml`.
+ */
 object CustomToast {
     @Suppress("DEPRECATION")
     fun show(context: Context, message: String, isError: Boolean = false) {

@@ -11,19 +11,28 @@ object SettingsManager {
     private const val KEY_FONT_Scale = "font_scale"
     private const val KEY_THEME_MODE = "theme_mode" // 0: Standard, 1: Colorblind, 2: Dark
 
-    fun getPreferences(context: Context): SharedPreferences {
+    private fun getPreferences(context: Context): SharedPreferences {
         return context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
     }
 
+    /**
+     * Updates the selected language and persists it.
+     * @param languageCode "es" for Spanish, "en" for English.
+     */
     fun setLanguage(context: Context, languageCode: String) {
         getPreferences(context).edit().putString(KEY_LANGUAGE, languageCode).apply()
-        updateLocale(context, languageCode)
+        // Locale update is handled via applyContext in the Activity lifecycle
     }
 
     fun getLanguage(context: Context): String {
         return getPreferences(context).getString(KEY_LANGUAGE, "es") ?: "es"
     }
 
+    /**
+     * Returns the Style Resource ID to be used in setTheme() calls.
+     * Special handling for Colorblind mode (Deuteranopia) which requires a specific style
+     * that overrides standard Night logic.
+     */
     fun getThemeResId(context: Context): Int {
         val mode = getThemeMode(context) // 0: Standard, 1: Dark (via NightMode), 2: Deuteranopia
         return when (mode) {
@@ -34,7 +43,6 @@ object SettingsManager {
 
     fun setFontScale(context: Context, scale: Float) {
         getPreferences(context).edit().putFloat(KEY_FONT_Scale, scale).apply()
-        // Note: Applying font scale dynamically usually requires recreating the activity or applying context wrapper
     }
 
     fun getFontScale(context: Context): Float {
@@ -46,7 +54,7 @@ object SettingsManager {
         applyTheme(mode)
     }
 
-    fun saveThemeMode(context: Context, mode: Int) {
+    private fun saveThemeMode(context: Context, mode: Int) {
         getPreferences(context).edit().putInt(KEY_THEME_MODE, mode).apply()
     }
 
@@ -54,16 +62,23 @@ object SettingsManager {
         return getPreferences(context).getInt(KEY_THEME_MODE, 0) // 0: Standard/Light
     }
 
+    /**
+     * Applies the Night Mode directly using AppCompatDelegate.
+     * @param mode 0: Standard (Light), 1: Dark, 2: Colorblind (forced Light base)
+     */
     fun applyTheme(mode: Int) {
         when (mode) {
             0 -> androidx.appcompat.app.AppCompatDelegate.setDefaultNightMode(androidx.appcompat.app.AppCompatDelegate.MODE_NIGHT_NO)
-            1 -> androidx.appcompat.app.AppCompatDelegate.setDefaultNightMode(androidx.appcompat.app.AppCompatDelegate.MODE_NIGHT_YES) // Dark
-            2 -> androidx.appcompat.app.AppCompatDelegate.setDefaultNightMode(androidx.appcompat.app.AppCompatDelegate.MODE_NIGHT_NO) // Colorblind (Custom Theme, Force Light base)
+            1 -> androidx.appcompat.app.AppCompatDelegate.setDefaultNightMode(androidx.appcompat.app.AppCompatDelegate.MODE_NIGHT_YES) 
+            2 -> androidx.appcompat.app.AppCompatDelegate.setDefaultNightMode(androidx.appcompat.app.AppCompatDelegate.MODE_NIGHT_NO) // Deuteranopia uses Light base + custom colors
             else -> androidx.appcompat.app.AppCompatDelegate.setDefaultNightMode(androidx.appcompat.app.AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM)
         }
     }
 
-    // Helper to get Context with updated config (locale + font)
+    /**
+     * Creates a new Context with the updated Configuration (Locale + Font Scale).
+     * Must be called in attachBaseContext() o similar to ensure resources are loaded correctly.
+     */
     fun applyContext(context: Context): Context {
         val languageCode = getLanguage(context)
         val fontScale = getFontScale(context)
@@ -78,7 +93,6 @@ object SettingsManager {
         return context.createConfigurationContext(config)
     }
 
-    private fun updateLocale(context: Context, languageCode: String) {
-        // ... (kept for compatibility or reference, but applyContext is better for ContextWrapper)
-    }
+    // Helper for legacy support if needed
+    private fun updateLocale(context: Context, languageCode: String) {}
 }

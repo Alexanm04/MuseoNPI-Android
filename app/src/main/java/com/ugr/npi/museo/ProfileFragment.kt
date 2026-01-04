@@ -20,6 +20,13 @@ import androidx.biometric.BiometricPrompt
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 
+/**
+ * Fragment that handles the User Profile interaction.
+ * It manages three distinct states via visibility toggling:
+ * 1. Login (Credentials or Biometric)
+ * 2. Register (New Account)
+ * 3. Authenticated (User Profile, Rewards, Settings)
+ */
 class ProfileFragment : Fragment() {
 
     private lateinit var layoutLogin: LinearLayout
@@ -129,7 +136,8 @@ class ProfileFragment : Fragment() {
     private fun resizeIcons() {
         val fontScale = SettingsManager.getFontScale(requireContext())
         
-        // Explicit Step Scaling Logic for Icons in Profile
+        // Manual scaling for Icons to ensure they match the text size preferences.
+        // Standard Android icons don't always scale with FontScale automatically.
         // Small: < 0.9
         // Large: > 1.1
         // Normal: else
@@ -286,7 +294,8 @@ class ProfileFragment : Fragment() {
     private var startBiometricEnrollment = false
 
     private fun setupListeners() {
-        // Login Flow
+        // --- Login Flow Listeners ---
+        etLoginUser.setOnFocusChangeListener { _, hasFocus ->
         etLoginUser.setOnFocusChangeListener { _, hasFocus ->
             if (hasFocus) {
                  val bioUser = UserManager.getBiometricUser(requireContext())
@@ -318,7 +327,7 @@ class ProfileFragment : Fragment() {
             showBiometricPrompt()
         }
 
-        // Register Flow
+        // --- Register Flow Listeners ---
         layoutRegister.findViewById<Button>(R.id.btn_register).setOnClickListener {
             val user = etRegisterUser.text.toString()
             val pass = etRegisterPass.text.toString()
@@ -343,7 +352,7 @@ class ProfileFragment : Fragment() {
             layoutLogin.visibility = View.VISIBLE
         }
 
-        // Authenticated Flow
+        // --- Authenticated Flow Listeners ---
         layoutAuthenticated.findViewById<Button>(R.id.btn_logout).setOnClickListener {
             UserManager.logout()
             updateUI()
@@ -428,7 +437,7 @@ class ProfileFragment : Fragment() {
                     super.onAuthenticationSucceeded(result)
                     
                     if (startBiometricEnrollment) {
-                        // ENROLL MODE
+                        // ENROLL MODE: Link current user to this device/fingerprint
                         UserManager.enableBiometric(requireContext())
                         CustomToast.show(requireContext(), getString(R.string.huella_vinculada))
                         updateUI()
