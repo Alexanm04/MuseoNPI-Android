@@ -48,6 +48,16 @@ class ProfileFragment : Fragment() {
 
     private lateinit var tvWelcome: TextView
 
+    // Rewards Views
+    private lateinit var btnRedeemRewards: Button
+    private lateinit var layoutRewardsPanel: LinearLayout
+    private lateinit var btnBackRewards: ImageButton
+    private lateinit var tvUserPoints: TextView
+    private lateinit var tvRewardsPoints: TextView
+    private lateinit var btnRedeem1: Button
+    private lateinit var btnRedeem2: Button
+    private lateinit var btnRedeem3: Button
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -56,9 +66,14 @@ class ProfileFragment : Fragment() {
         
         initViews(view)
         
-        if (savedInstanceState != null && savedInstanceState.getBoolean("IS_SETTINGS_OPEN", false)) {
-            layoutSettingsPanel.visibility = View.VISIBLE
-            btnSettingsToggle.visibility = View.GONE
+        if (savedInstanceState != null) {
+             if (savedInstanceState.getBoolean("IS_SETTINGS_OPEN", false)) {
+                layoutSettingsPanel.visibility = View.VISIBLE
+                btnSettingsToggle.visibility = View.GONE
+             }
+             if (savedInstanceState.getBoolean("IS_REWARDS_OPEN", false)) {
+                 layoutRewardsPanel.visibility = View.VISIBLE
+             }
         }
         
         setupListeners()
@@ -70,6 +85,7 @@ class ProfileFragment : Fragment() {
     override fun onSaveInstanceState(outState: Bundle) {
         super.onSaveInstanceState(outState)
         outState.putBoolean("IS_SETTINGS_OPEN", layoutSettingsPanel.visibility == View.VISIBLE)
+        outState.putBoolean("IS_REWARDS_OPEN", layoutRewardsPanel.visibility == View.VISIBLE)
     }
 
     private fun initViews(view: View) {
@@ -85,6 +101,7 @@ class ProfileFragment : Fragment() {
         etRegisterPass = view.findViewById(R.id.et_register_password)
 
         tvWelcome = view.findViewById(R.id.tv_welcome)
+        tvUserPoints = view.findViewById(R.id.tv_user_points)
 
         // Settings Init
         btnSettingsToggle = view.findViewById(R.id.btn_settings_toggle)
@@ -96,6 +113,15 @@ class ProfileFragment : Fragment() {
         rbThemeLight = view.findViewById(R.id.rb_theme_light)
         rbThemeDark = view.findViewById(R.id.rb_theme_dark)
         rbThemeColorblind = view.findViewById(R.id.rb_theme_colorblind)
+        
+        // Rewards Init
+        btnRedeemRewards = view.findViewById(R.id.btn_redeem_rewards)
+        layoutRewardsPanel = view.findViewById(R.id.layout_rewards_panel)
+        btnBackRewards = view.findViewById(R.id.btn_back_rewards)
+        tvRewardsPoints = view.findViewById(R.id.tv_rewards_points)
+        btnRedeem1 = view.findViewById(R.id.btn_redeem_1)
+        btnRedeem2 = view.findViewById(R.id.btn_redeem_2)
+        btnRedeem3 = view.findViewById(R.id.btn_redeem_3)
 
         resizeIcons()
     }
@@ -145,6 +171,9 @@ class ProfileFragment : Fragment() {
         
         // Apply to Back Settings (Base 40dp)
         scaleView(btnBackSettings, 40f)
+        
+        // Apply to Back Rewards (Base 40dp)
+        scaleView(btnBackRewards, 40f)
     }
 
     private fun setupSettings() {
@@ -186,14 +215,6 @@ class ProfileFragment : Fragment() {
 
         seekbarFontSize.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {
             override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
-                // For Seekbar, we might want to wait for "StopTracking" to avoid spamming recreate,
-                // BUT user requested "when I change... immediately". 
-                // However, spamming recreate on every tick of slide is bad UX and performance.
-                // Let's do it on StopTrackingTouch for sliding, or debounce. 
-                // But simplified requirement interpretation: Apply on change. 
-                // To be safe and usable, I'll apply on StopTrackingTouch OR explicit click.
-                // Actually, standard behavior for font size sliders is often "apply on release".
-                // I will move logic to onStopTrackingTouch to prevent crash/lag loop while sliding.
             }
             override fun onStartTrackingTouch(seekBar: SeekBar?) {}
             override fun onStopTrackingTouch(seekBar: SeekBar?) {
@@ -240,6 +261,26 @@ class ProfileFragment : Fragment() {
     private fun closeSettings() {
         layoutSettingsPanel.visibility = View.GONE
         btnSettingsToggle.visibility = View.VISIBLE
+    }
+    
+    private fun closeRewards() {
+        layoutRewardsPanel.visibility = View.GONE
+    }
+    
+    private fun updatePointsDisplay() {
+        val user = UserManager.getCurrentUser()
+        val points = user?.points ?: 0
+        tvUserPoints.text = getString(R.string.mis_puntos, points)
+        tvRewardsPoints.text = getString(R.string.mis_puntos, points)
+    }
+
+    private fun attemptRedeem(cost: Int) {
+        if (UserManager.deductPoints(requireContext(), cost)) {
+            CustomToast.show(requireContext(), getString(R.string.recompensa_canjeada))
+            updatePointsDisplay()
+        } else {
+            CustomToast.show(requireContext(), getString(R.string.puntos_insuficientes), true)
+        }
     }
 
     private var startBiometricEnrollment = false
@@ -324,11 +365,27 @@ class ProfileFragment : Fragment() {
             closeSettings()
         }
         
+        // Rewards Listeners
+        btnRedeemRewards.setOnClickListener {
+            layoutRewardsPanel.visibility = View.VISIBLE
+            updatePointsDisplay()
+        }
+        
+        btnBackRewards.setOnClickListener {
+            closeRewards()
+        }
+        
+        btnRedeem1.setOnClickListener { attemptRedeem(50) }
+        btnRedeem2.setOnClickListener { attemptRedeem(200) }
+        btnRedeem3.setOnClickListener { attemptRedeem(5000) }
+        
         requireActivity().onBackPressedDispatcher.addCallback(viewLifecycleOwner, 
             object : androidx.activity.OnBackPressedCallback(true) {
                 override fun handleOnBackPressed() {
                     if (layoutSettingsPanel.visibility == View.VISIBLE) {
                         closeSettings()
+                    } else if (layoutRewardsPanel.visibility == View.VISIBLE) {
+                        closeRewards()
                     } else {
                         isEnabled = false
                         requireActivity().onBackPressedDispatcher.onBackPressed()
@@ -347,6 +404,7 @@ class ProfileFragment : Fragment() {
             layoutRegister.visibility = View.GONE
             layoutAuthenticated.visibility = View.VISIBLE
             tvWelcome.text = getString(R.string.bienvenido_user, currentUser.username)
+            updatePointsDisplay()
             
             val btnEnableBio = layoutAuthenticated.findViewById<Button>(R.id.btn_enable_biometric)
             if (currentUser.biometricEnabled) {

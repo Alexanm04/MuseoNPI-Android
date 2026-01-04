@@ -7,20 +7,21 @@ data class User(
     val username: String,
     val password: String, // Storing plain text as requested for the demo
     val email: String,
-    var biometricEnabled: Boolean = false
+    var biometricEnabled: Boolean = false,
+    var points: Int = 0
 )
 
 object UserManager {
     private const val FILE_NAME = "users.txt"
     private var currentUser: User? = null
 
-    // Format per line: username,password,email,biometricEnabled
+    // Format per line: username,password,email,biometricEnabled,points
 
     fun register(context: Context, user: User): Boolean {
         if (userExists(context, user.username)) return false
 
         val file = File(context.filesDir, FILE_NAME)
-        file.appendText("${user.username},${user.password},${user.email},${user.biometricEnabled}\n")
+        file.appendText("${user.username},${user.password},${user.email},${user.biometricEnabled},${user.points}\n")
         currentUser = user
         return true
     }
@@ -53,6 +54,22 @@ object UserManager {
         currentUser = null
     }
 
+    fun addPoints(context: Context, amount: Int) {
+        val user = currentUser ?: return
+        user.points += amount
+        updateUserInFile(context, user)
+    }
+
+    fun deductPoints(context: Context, amount: Int): Boolean {
+        val user = currentUser ?: return false
+        if (user.points >= amount) {
+            user.points -= amount
+            updateUserInFile(context, user)
+            return true
+        }
+        return false
+    }
+
     fun enableBiometric(context: Context): Boolean {
         val user = currentUser ?: return false
         user.biometricEnabled = true
@@ -77,7 +94,9 @@ object UserManager {
         return file.readLines().mapNotNull { line ->
             val parts = line.split(",")
             if (parts.size >= 4) {
-                User(parts[0], parts[1], parts[2], parts[3].toBoolean())
+                // Backward compatibility: if 4 parts, points = 0. If 5 parts, read points.
+                val points = if (parts.size >= 5) parts[4].toIntOrNull() ?: 0 else 0
+                User(parts[0], parts[1], parts[2], parts[3].toBoolean(), points)
             } else {
                 null
             }
@@ -92,7 +111,7 @@ object UserManager {
             val file = File(context.filesDir, FILE_NAME)
             file.writeText("") // Clear file
             users.forEach { user ->
-                file.appendText("${user.username},${user.password},${user.email},${user.biometricEnabled}\n")
+                file.appendText("${user.username},${user.password},${user.email},${user.biometricEnabled},${user.points}\n")
             }
         }
     }

@@ -88,4 +88,20 @@
     <string name="importante_registra_huella">IMPORTANT: Register a fingerprint in Android Settings.</string>
     <string name="pregunta_progress">Question %1$d / %2$d</string>
     <string name="home_welcome_text">🏠 I AM HOME</string>
+
+    <!-- Rewards -->
+    <string name="canjear_recompensas_btn">Redeem Rewards</string>
+    <string name="recompensas_titulo">Rewards</string>
+    <string name="mis_puntos">My Points: %1$d</string>
+    <string name="canjear">REDEEM</string>
+    <string name="entrada_museo">Free Museum Ticket</string>
+    <string name="entrada_museo_desc">A free general admission ticket.</string>
+    <string name="piramide_3d">3D Pyramid Figure</string>
+    <string name="piramide_3d_desc">A collectible figure.</string>
+    <string name="viaje_egipto">Trip to Egypt</string>
+    <string name="viaje_egipto_desc">All-inclusive trip for 2 people.</string>
+    <string name="coste_puntos">%1$d Points</string>
+    <string name="recompensa_canjeada">Reward redeemed successfully!</string>
+    <string name="puntos_insuficientes">Not enough points.</string>
+    <string name="volver">Back</string>
 </resources>

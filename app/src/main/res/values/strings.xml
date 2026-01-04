@@ -88,4 +88,20 @@
     <string name="importante_registra_huella">IMPORTANTE: Registra una huella en Ajustes de Android.</string>
     <string name="pregunta_progress">Pregunta %1$d / %2$d</string>
     <string name="home_welcome_text">🏠 ESTOY EN INICIO</string>
+
+    <!-- Rewards -->
+    <string name="canjear_recompensas_btn">Canjear Recompensas</string>
+    <string name="recompensas_titulo">Recompensas</string>
+    <string name="mis_puntos">Mis Puntos: %1$d</string>
+    <string name="canjear">CANJEAR</string>
+    <string name="entrada_museo">Entrada Gratis al Museo</string>
+    <string name="entrada_museo_desc">Una entrada general gratuita.</string>
+    <string name="piramide_3d">Figura Pirámide 3D</string>
+    <string name="piramide_3d_desc">Una figura coleccionable.</string>
+    <string name="viaje_egipto">Viaje a Egipto</string>
+    <string name="viaje_egipto_desc">Viaje todo incluido para 2 personas.</string>
+    <string name="coste_puntos">%1$d Puntos</string>
+    <string name="recompensa_canjeada">¡Recompensa canjeada con éxito!</string>
+    <string name="puntos_insuficientes">No tienes suficientes puntos.</string>
+    <string name="volver">Volver</string>
 </resources>

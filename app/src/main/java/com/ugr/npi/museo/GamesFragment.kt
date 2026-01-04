@@ -171,6 +171,13 @@ class GamesFragment : Fragment(R.layout.fragment_games) {
 
             // Solo mostramos "¡CORRECTO!"
             mostrarFeedbackOverlay(true, getString(R.string.correcto))
+
+            // Add points if user is logged in
+            if (UserManager.getCurrentUser() != null) {
+                UserManager.addPoints(requireContext(), 10)
+                // Optional: Show a small toast or log
+                // CustomToast.show(requireContext(), "+10 Puntos!")
+            }
         } else {
             botonPulsado.backgroundTintList = ColorStateList.valueOf(Color.parseColor("#F44336"))
             animarError(botonPulsado)
