@@ -296,7 +296,6 @@ class ProfileFragment : Fragment() {
     private fun setupListeners() {
         // --- Login Flow Listeners ---
         etLoginUser.setOnFocusChangeListener { _, hasFocus ->
-        etLoginUser.setOnFocusChangeListener { _, hasFocus ->
             if (hasFocus) {
                  val bioUser = UserManager.getBiometricUser(requireContext())
                  if (bioUser != null) {
