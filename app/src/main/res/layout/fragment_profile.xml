@@ -31,7 +31,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Iniciar Sesión"
+                    android:text="@string/iniciar_sesion"
                     android:textSize="24sp"
                     android:textStyle="bold"
                     android:layout_marginBottom="24dp"/>
@@ -40,14 +40,14 @@
                     android:id="@+id/et_login_username"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Usuario"
+                    android:hint="@string/usuario_hint"
                     android:inputType="text"/>
 
                 <EditText
                     android:id="@+id/et_login_password"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Contraseña"
+                    android:hint="@string/contrasena_hint"
                     android:inputType="textPassword"
                     android:layout_marginTop="8dp"/>
 
@@ -55,7 +55,7 @@
                     android:id="@+id/btn_login"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Entrar"
+                    android:text="@string/entrar_btn"
                     android:layout_marginTop="16dp"/>
 
                 <ImageButton
@@ -73,7 +73,7 @@
                     android:id="@+id/tv_go_to_register"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="¿No tienes cuenta? Crear una"
+                    android:text="@string/no_cuenta"
                     android:layout_marginTop="24dp"
                     android:textColor="?attr/colorPrimary"
                     android:layout_gravity="center"/>
@@ -91,7 +91,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Crear Cuenta"
+                    android:text="@string/crear_cuenta"
                     android:textSize="24sp"
                     android:textStyle="bold"
                     android:layout_marginBottom="24dp"/>
@@ -100,14 +100,14 @@
                     android:id="@+id/et_register_username"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Usuario"
+                    android:hint="@string/usuario_hint"
                     android:inputType="text"/>
 
                  <EditText
                     android:id="@+id/et_register_email"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Correo"
+                    android:hint="@string/correo_hint"
                     android:inputType="textEmailAddress"
                     android:layout_marginTop="8dp"/>
 
@@ -115,7 +115,7 @@
                     android:id="@+id/et_register_password"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Contraseña"
+                    android:hint="@string/contrasena_hint"
                     android:inputType="textPassword"
                     android:layout_marginTop="8dp"/>
 
@@ -123,14 +123,14 @@
                     android:id="@+id/btn_register"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Registrarse"
+                    android:text="@string/registrarse_btn"
                     android:layout_marginTop="16dp"/>
 
                 <TextView
                     android:id="@+id/tv_go_to_login"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="¿Ya tienes cuenta? Iniciar Sesión"
+                    android:text="@string/ya_cuenta"
                     android:layout_marginTop="24dp"
                     android:textColor="?attr/colorPrimary"
                     android:layout_gravity="center"/>
@@ -150,7 +150,7 @@
                     android:id="@+id/tv_welcome"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Bienvenido"
+                    android:text="@string/bienvenido_user"
                     android:textSize="24sp"
                     android:layout_marginBottom="24dp"/>
 
@@ -158,14 +158,14 @@
                     android:id="@+id/btn_enable_biometric"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Activar Huella"
+                    android:text="@string/activar_huella"
                     android:layout_marginBottom="16dp"/>
 
                 <Button
                     android:id="@+id/btn_logout"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Cerrar Sesión"/>
+                    android:text="@string/cerrar_sesion"/>
 
             </LinearLayout>
 
@@ -219,7 +219,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Configuración"
+                android:text="@string/configuracion_titulo"
                 android:textSize="24sp"
                 android:textStyle="bold"
                 android:layout_centerInParent="true"/>
@@ -229,7 +229,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Idioma"
+            android:text="@string/idioma_label"
             android:textStyle="bold"
             android:textSize="18sp"
             android:layout_marginTop="16dp"/>
@@ -244,7 +244,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Tamaño de Letra"
+            android:text="@string/tamano_letra_label"
             android:textStyle="bold"
             android:textSize="18sp"
             android:layout_marginTop="24dp"/>
@@ -283,7 +283,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Tema"
+            android:text="@string/tema_label"
             android:textStyle="bold"
             android:textSize="18sp"
             android:layout_marginTop="24dp"/>
@@ -298,21 +298,21 @@
                 android:id="@+id/rb_theme_light"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Claro"
+                android:text="@string/tema_claro"
                 android:textColor="?android:attr/textColorPrimary"/>
             
             <RadioButton
                 android:id="@+id/rb_theme_dark"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Oscuro"
+                android:text="@string/tema_oscuro"
                 android:textColor="?android:attr/textColorPrimary"/>
             
             <RadioButton
                 android:id="@+id/rb_theme_colorblind"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Deuteranopía (Daltónico)"
+                android:text="@string/tema_daltonico"
                 android:textColor="?android:attr/textColorPrimary"/>
         </RadioGroup>
 

@@ -136,7 +136,7 @@ class GamesFragment : Fragment(R.layout.fragment_games) {
             val pregunta = listaPreguntas[indicePreguntaActual]
 
             tvPregunta.text = pregunta.pregunta
-            tvProgress.text = "Pregunta ${indicePreguntaActual + 1} / ${listaPreguntas.size}"
+            tvProgress.text = getString(R.string.pregunta_progress, indicePreguntaActual + 1, listaPreguntas.size)
 
             respuestaCorrectaActualString = pregunta.opciones[pregunta.respuestaCorrecta]
 
@@ -273,7 +273,9 @@ class GamesFragment : Fragment(R.layout.fragment_games) {
     private fun cargarPreguntasDesdeJson(): List<Pregunta> {
         val jsonString: String
         try {
-            jsonString = requireContext().assets.open("preguntas.json").bufferedReader().use { it.readText() }
+            val language = java.util.Locale.getDefault().language
+            val fileName = if (language == "en") "preguntas_en.json" else "preguntas.json"
+            jsonString = requireContext().assets.open(fileName).bufferedReader().use { it.readText() }
         } catch (e: IOException) {
             return emptyList()
         }

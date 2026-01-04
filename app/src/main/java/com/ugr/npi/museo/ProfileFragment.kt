@@ -261,9 +261,9 @@ class ProfileFragment : Fragment() {
             val pass = etLoginPass.text.toString()
             if (UserManager.login(requireContext(), user, pass)) {
                 updateUI()
-                CustomToast.show(requireContext(), "Login Correcto")
+                CustomToast.show(requireContext(), getString(R.string.login_correcto))
             } else {
-                CustomToast.show(requireContext(), "Credenciales inválidas", true)
+                CustomToast.show(requireContext(), getString(R.string.credenciales_invalidas), true)
             }
         }
 
@@ -284,16 +284,16 @@ class ProfileFragment : Fragment() {
             val email = etRegisterEmail.text.toString()
 
             if (user.isEmpty() || pass.isEmpty() || email.isEmpty()) {
-                CustomToast.show(requireContext(), "Rellena todos los campos", true)
+                CustomToast.show(requireContext(), getString(R.string.rellena_campos), true)
                 return@setOnClickListener
             }
 
             val newUser = User(user, pass, email)
             if (UserManager.register(requireContext(), newUser)) {
-                CustomToast.show(requireContext(), "Cuenta creada")
+                CustomToast.show(requireContext(), getString(R.string.cuenta_creada))
                 updateUI() 
             } else {
-                CustomToast.show(requireContext(), "El usuario ya existe", true)
+                CustomToast.show(requireContext(), getString(R.string.usuario_existe), true)
             }
         }
 
@@ -346,7 +346,7 @@ class ProfileFragment : Fragment() {
             layoutLogin.visibility = View.GONE
             layoutRegister.visibility = View.GONE
             layoutAuthenticated.visibility = View.VISIBLE
-            tvWelcome.text = "Bienvenido, ${currentUser.username}"
+            tvWelcome.text = getString(R.string.bienvenido_user, currentUser.username)
             
             val btnEnableBio = layoutAuthenticated.findViewById<Button>(R.id.btn_enable_biometric)
             if (currentUser.biometricEnabled) {
@@ -372,7 +372,7 @@ class ProfileFragment : Fragment() {
                     if (startBiometricEnrollment) {
                         // ENROLL MODE
                         UserManager.enableBiometric(requireContext())
-                        CustomToast.show(requireContext(), "Huella vinculada correctamente")
+                        CustomToast.show(requireContext(), getString(R.string.huella_vinculada))
                         updateUI()
                     } else {
                         // LOGIN MODE
@@ -382,10 +382,10 @@ class ProfileFragment : Fragment() {
                             etLoginPass.setText(user.password)
                             if (UserManager.login(requireContext(), user.username, user.password)) {
                                 updateUI()
-                                CustomToast.show(requireContext(), "Login con Huella Exitoso")
+                                CustomToast.show(requireContext(), getString(R.string.login_huella_exitoso))
                             }
                         } else {
-                             CustomToast.show(requireContext(), "No hay usuario vinculado a la huella", true)
+                             CustomToast.show(requireContext(), getString(R.string.no_usuario_huella), true)
                         }
                     }
                     startBiometricEnrollment = false
@@ -395,22 +395,22 @@ class ProfileFragment : Fragment() {
                     super.onAuthenticationError(errorCode, errString)
                     startBiometricEnrollment = false
                     if (errorCode == BiometricPrompt.ERROR_NO_BIOMETRICS || errorCode == 11) { // 11 is generic no enrolled
-                         CustomToast.show(requireContext(), "Debes registrar una huella en los Ajustes de Android primero", true)
+                         CustomToast.show(requireContext(), getString(R.string.registra_huella_android), true)
                     } else {
-                        CustomToast.show(requireContext(), "Error: $errString", true)
+                        CustomToast.show(requireContext(), getString(R.string.error_prefix, errString), true)
                     }
                 }
 
                 override fun onAuthenticationFailed() {
                     super.onAuthenticationFailed()
-                    CustomToast.show(requireContext(), "Huella no reconocida", true)
+                    CustomToast.show(requireContext(), getString(R.string.huella_no_reconocida), true)
                 }
             })
 
         val promptInfo = BiometricPrompt.PromptInfo.Builder()
-            .setTitle(if (startBiometricEnrollment) "Vincular Huella" else "Iniciar sesión con huella")
-            .setSubtitle("Toca el sensor")
-            .setNegativeButtonText("Cancelar")
+            .setTitle(if (startBiometricEnrollment) getString(R.string.vincular_huella_titulo) else getString(R.string.iniciar_sesion_huella_titulo))
+            .setSubtitle(getString(R.string.toca_sensor))
+            .setNegativeButtonText(getString(R.string.cancelar))
             .build()
         
         val biometricManager = BiometricManager.from(requireContext())
@@ -419,7 +419,7 @@ class ProfileFragment : Fragment() {
                 biometricPrompt.authenticate(promptInfo)
             }
             BiometricManager.BIOMETRIC_ERROR_NONE_ENROLLED -> {
-                 CustomToast.show(requireContext(), "IMPORTANTE: Registra una huella en Ajustes de Android.", true)
+                 CustomToast.show(requireContext(), getString(R.string.importante_registra_huella), true)
             }
             else -> {
                 // Try anyway or show error

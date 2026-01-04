@@ -47,4 +47,45 @@
     <string name="aprender_mas_titulo">Aprender más sobre la obra</string>
     <string name="mostrar_mas_info">Mostrar más información</string>
     <string name="cerrar">Cerrar</string>
+
+    <!-- Profile & Settings -->
+    <string name="iniciar_sesion">Iniciar Sesión</string>
+    <string name="usuario_hint">Usuario</string>
+    <string name="contrasena_hint">Contraseña</string>
+    <string name="entrar_btn">Entrar</string>
+    <string name="no_cuenta">¿No tienes cuenta? Crear una</string>
+    <string name="crear_cuenta">Crear Cuenta</string>
+    <string name="registrarse_btn">Registrarse</string>
+    <string name="ya_cuenta">¿Ya tienes cuenta? Iniciar Sesión</string>
+    <string name="bienvenido_user">Bienvenido, %1$s</string>
+    <string name="activar_huella">Activar Huella</string>
+    <string name="cerrar_sesion">Cerrar Sesión</string>
+    <string name="configuracion_titulo">Configuración</string>
+    <string name="idioma_label">Idioma</string>
+    <string name="tamano_letra_label">Tamaño de Letra</string>
+    <string name="tema_label">Tema</string>
+    <string name="tema_claro">Claro</string>
+    <string name="tema_oscuro">Oscuro</string>
+    <string name="tema_daltonico">Deuteranopía (Daltónico)</string>
+    <string name="correo_hint">Correo</string>
+
+    <!-- Toasts & Messages -->
+    <string name="login_correcto">Login Correcto</string>
+    <string name="credenciales_invalidas">Credenciales inválidas</string>
+    <string name="rellena_campos">Rellena todos los campos</string>
+    <string name="cuenta_creada">Cuenta creada</string>
+    <string name="usuario_existe">El usuario ya existe</string>
+    <string name="huella_vinculada">Huella vinculada correctamente</string>
+    <string name="login_huella_exitoso">Login con Huella Exitoso</string>
+    <string name="no_usuario_huella">No hay usuario vinculado a la huella</string>
+    <string name="registra_huella_android">Debes registrar una huella en los Ajustes de Android primero</string>
+    <string name="error_prefix">Error: %1$s</string>
+    <string name="huella_no_reconocida">Huella no reconocida</string>
+    <string name="vincular_huella_titulo">Vincular Huella</string>
+    <string name="iniciar_sesion_huella_titulo">Iniciar sesión con huella</string>
+    <string name="toca_sensor">Toca el sensor</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="importante_registra_huella">IMPORTANTE: Registra una huella en Ajustes de Android.</string>
+    <string name="pregunta_progress">Pregunta %1$d / %2$d</string>
+    <string name="home_welcome_text">🏠 ESTOY EN INICIO</string>
 </resources>

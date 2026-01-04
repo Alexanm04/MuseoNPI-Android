@@ -1,14 +1,45 @@
 <resources>
+    <string name="app_name">MuseoNPI</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="inicio">Home</string>
     <string name="juegos">Games</string>
     <string name="mapa">Map</string>
     <string name="perfil">Profile</string>
     <string name="esc_ner">Scanner</string>
+
+    <string name="error">ERROR!</string>
+    <string name="la_correcta_era">The correct one was:\n%1$s</string>
+    <string name="tiempo_agotado">TIME\'S UP!</string>
+    <string name="juego_completado">GAME COMPLETED!</string>
+    <string name="finalizado">Finished</string>
+    <string name="nuevo_record">NEW RECORD!</string>
+
+    <string name="correcto">CORRECT!</string>
     <string name="jugar_otra_vez">PLAY AGAIN</string>
     <string name="r_cord">RECORD</string>
     <string name="tiempo">TIME</string>
     <string name="puntos_0">POINTS</string>
-    <string name="correcto">CORRECT !</string>
+    <string name="pregunta">Question?</string>
+
+    <string name="opcion_1">OPTION 1</string>
+    <string name="opcion_2">OPTION 2</string>
+    <string name="opcion_3">OPTION 3</string>
+    <string name="opcion_4">OPTION 4</string>
+
+    <string name="opci_n_d">Option D</string>
+    <string name="opci_n_c">Option C</string>
+    <string name="opci_n_b">Option B</string>
+    <string name="opci_n_a">Option A</string>
+    <string name="cargando_pregunta">Loading question...</string>
+    <string name="cargando_pregunta1">Loading question...</string>
+    <string name="d">D</string>
+    <string name="c">C</string>
+    <string name="b">B</string>
+    <string name="a">A</string>
+    <string name="puntos">POINTS:</string>
+    <string name="jugar_otra_vez1">PLAY AGAIN</string>
+    
     <string name="imagen_del_objeto">Representative image of the museum object</string>
     <string name="categoria_label">Category: %1$s</string>
     <string name="aprender_mas_obra">Learn more about this work</string>
@@ -16,4 +47,45 @@
     <string name="aprender_mas_titulo">Learn more about the work</string>
     <string name="mostrar_mas_info">Show more information</string>
     <string name="cerrar">Close</string>
+
+    <!-- Profile & Settings -->
+    <string name="iniciar_sesion">Login</string>
+    <string name="usuario_hint">Username</string>
+    <string name="contrasena_hint">Password</string>
+    <string name="entrar_btn">Enter</string>
+    <string name="no_cuenta">Don\'t have an account? Create one</string>
+    <string name="crear_cuenta">Create Account</string>
+    <string name="registrarse_btn">Register</string>
+    <string name="ya_cuenta">Already have an account? Login</string>
+    <string name="bienvenido_user">Welcome, %1$s</string>
+    <string name="activar_huella">Enable Fingerprint</string>
+    <string name="cerrar_sesion">Logout</string>
+    <string name="configuracion_titulo">Settings</string>
+    <string name="idioma_label">Language</string>
+    <string name="tamano_letra_label">Font Size</string>
+    <string name="tema_label">Theme</string>
+    <string name="tema_claro">Light</string>
+    <string name="tema_oscuro">Dark</string>
+    <string name="tema_daltonico">Deuteranopia (Colorblind)</string>
+    <string name="correo_hint">Email</string>
+
+    <!-- Toasts & Messages -->
+    <string name="login_correcto">Login Successful</string>
+    <string name="credenciales_invalidas">Invalid credentials</string>
+    <string name="rellena_campos">Fill in all fields</string>
+    <string name="cuenta_creada">Account created</string>
+    <string name="usuario_existe">User already exists</string>
+    <string name="huella_vinculada">Fingerprint linked successfully</string>
+    <string name="login_huella_exitoso">Fingerprint login successful</string>
+    <string name="no_usuario_huella">No user linked to fingerprint</string>
+    <string name="registra_huella_android">You must register a fingerprint in Android Settings first</string>
+    <string name="error_prefix">Error: %1$s</string>
+    <string name="huella_no_reconocida">Fingerprint not recognized</string>
+    <string name="vincular_huella_titulo">Link Fingerprint</string>
+    <string name="iniciar_sesion_huella_titulo">Login with fingerprint</string>
+    <string name="toca_sensor">Touch the sensor</string>
+    <string name="cancelar">Cancel</string>
+    <string name="importante_registra_huella">IMPORTANT: Register a fingerprint in Android Settings.</string>
+    <string name="pregunta_progress">Question %1$d / %2$d</string>
+    <string name="home_welcome_text">🏠 I AM HOME</string>
 </resources>

@@ -1,0 +1,102 @@
+[
+  {
+    "pregunta": "Who is the god of the dead with the head of a jackal? (Gods Hall)",
+    "opciones": ["Anubis", "Horus", "Ra", "Osiris"],
+    "respuestaCorrecta": 0
+  },
+  {
+    "pregunta": "Who is the supreme Sun god? (Gods Hall)",
+    "opciones": ["Osiris", "Ra", "Ptah", "Thoth"],
+    "respuestaCorrecta": 1
+  },
+  {
+    "pregunta": "Who is the goddess of magic and wife of Osiris? (Gods Hall)",
+    "opciones": ["Hathor", "Sekhmet", "Isis", "Bastet"],
+    "respuestaCorrecta": 2
+  },
+  {
+    "pregunta": "Which god of chaos murdered his brother Osiris? (Gods Hall)",
+    "opciones": ["Horus", "Thoth", "Amun", "Seth"],
+    "respuestaCorrecta": 3
+  },
+  {
+    "pregunta": "Which pharaoh is famous for his intact tomb? (Pharaohs Hall)",
+    "opciones": ["Ramses II", "Tutankhamun", "Cheops", "Akhenaten"],
+    "respuestaCorrecta": 1
+  },
+  {
+    "pregunta": "Who was the female pharaoh who wore a false beard? (Pharaohs Hall)",
+    "opciones": ["Hatshepsut", "Nefertiti", "Cleopatra", "Tiye"],
+    "respuestaCorrecta": 0
+  },
+  {
+    "pregunta": "Which pharaoh built the temples of Abu Simbel? (Pharaohs Hall)",
+    "opciones": ["Djoser", "Tutankhamun", "Ramses II", "Seti I"],
+    "respuestaCorrecta": 2
+  },
+  {
+    "pregunta": "Which pharaoh tried to impose a single god (Aten)? (Pharaohs Hall)",
+    "opciones": ["Khafre", "Menkaure", "Thutmose III", "Akhenaten"],
+    "respuestaCorrecta": 3
+  },
+  {
+    "pregunta": "Which Nile plant was used to make paper? (Nile River Hall)",
+    "opciones": ["Lotus", "Papyrus", "Palm", "Reed"],
+    "respuestaCorrecta": 1
+  },
+  {
+    "pregunta": "What fearsome reptile inhabits the waters of the Nile? (Nile River Hall)",
+    "opciones": ["Hippopotamus", "Cobra", "Crocodile", "Monitor Lizard"],
+    "respuestaCorrecta": 2
+  },
+  {
+    "pregunta": "What did the Nile leave after flooding that fertilized the land? (Nile River Hall)",
+    "opciones": ["Salt", "Black Silt", "Sand", "Stones"],
+    "respuestaCorrecta": 1
+  },
+  {
+    "pregunta": "In which direction does the Nile River flow? (Nile River Hall)",
+    "opciones": ["North to South", "East to West", "South to North", "West to East"],
+    "respuestaCorrecta": 2
+  },
+  {
+    "pregunta": "What were pyramids mainly used for? (Pyramids Hall)",
+    "opciones": ["Temples", "Palaces", "Granaries", "Tombs"],
+    "respuestaCorrecta": 3
+  },
+  {
+    "pregunta": "Which is the largest pyramid of Giza? (Pyramids Hall)",
+    "opciones": ["Khafre", "Cheops", "Menkaure", "Djoser"],
+    "respuestaCorrecta": 1
+  },
+  {
+    "pregunta": "What creature guards the pyramids of Giza? (Pyramids Hall)",
+    "opciones": ["The Phoenix", "The Griffin", "The Sphinx", "The Leviathan"],
+    "respuestaCorrecta": 2
+  },
+  {
+    "pregunta": "Which pharaoh built the first step pyramid? (Pyramids Hall)",
+    "opciones": ["Djoser", "Cheops", "Sneferu", "Imhotep"],
+    "respuestaCorrecta": 0
+  },
+  {
+    "pregunta": "Which organ was weighed in the final judgment? (Underworld Hall)",
+    "opciones": ["The brain", "The liver", "The eyes", "The heart"],
+    "respuestaCorrecta": 3
+  },
+  {
+    "pregunta": "Against what object was the deceased's heart weighed? (Underworld Hall)",
+    "opciones": ["A feather", "A stone", "A coin", "A knife"],
+    "respuestaCorrecta": 0
+  },
+  {
+    "pregunta": "What book guided the dead in the afterlife? (Underworld Hall)",
+    "opciones": ["Book of the Living", "Book of Kings", "Book of the Dead", "Sacred Texts"],
+    "respuestaCorrecta": 2
+  },
+  {
+    "pregunta": "Who is the supreme judge of the world of the dead? (Underworld Hall)",
+    "opciones": ["Anubis", "Osiris", "Seth", "Horus"],
+    "respuestaCorrecta": 1
+  }
+]
