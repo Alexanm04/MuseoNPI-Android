@@ -1,7 +1,26 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.MuseoNPI" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="android:windowBackground">@color/egypt_bg</item>
+        <item name="colorPrimary">@color/egypt_gold</item>
+        <item name="colorOnPrimary">@color/egypt_text_primary</item>
+        <item name="colorSurface">@color/egypt_bg</item>
+        <item name="colorControlNormal">@color/egypt_text_primary</item>
+        
+        <!-- Game Attributes (Normal) -->
+        <item name="gameOption1Bg">@color/game_opt1_n</item>
+        <item name="gameOption1Text">@color/text_white</item>
+        <item name="gameOption2Bg">@color/game_opt2_n</item>
+        <item name="gameOption2Text">@color/text_white</item>
+        <item name="gameOption3Bg">@color/game_opt3_n</item>
+        <item name="gameOption3Text">@color/text_white</item>
+        <item name="gameOption4Bg">@color/game_opt4_n</item>
+        <item name="gameOption4Text">@color/text_white</item>
+        
+        <item name="gameBackground">@drawable/fondo_juego</item>
+        <item name="gameCardBackground">@color/egypt_card</item>
+        <item name="gameTextPrimary">@color/egypt_text_primary</item>
+        <item name="gameTextSecondary">@color/egypt_text_secondary</item>
+        <item name="gameStrokeColor">@color/egypt_gold</item>
     </style>
 </resources>

@@ -33,6 +33,9 @@
         <action
             android:id="@+id/action_scannerFragment_to_inventoryFragment"
             app:destination="@id/inventoryFragment" />
+        <action
+            android:id="@+id/action_scannerFragment_to_objectDetailFragment"
+            app:destination="@id/objectDetailFragment" />
     </fragment>
     <activity
         android:id="@+id/mainActivity"
