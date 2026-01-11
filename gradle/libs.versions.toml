@@ -14,6 +14,7 @@ gson = "2.13.2"        # Nota: La última de GSON ronda la 2.11.0
 lifecycle = "2.10.0"    # Nota: La última de Lifecycle ronda la 2.8.x
 camerax = "1.4.1"
 barcodeScanning = "17.3.0"
+generativeai = "0.9.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -39,6 +40,9 @@ androidx-camera-view = { group = "androidx.camera", name = "camera-view", versio
 
 # ML Kit Barcode Scanning
 barcode-scanning = { group = "com.google.mlkit", name = "barcode-scanning", version.ref = "barcodeScanning" }
+
+# Gemini AI
+generativeai = { group = "com.google.ai.client.generativeai", name = "generativeai", version.ref = "generativeai" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

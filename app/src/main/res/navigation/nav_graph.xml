@@ -60,4 +60,9 @@
             android:name="museoObject"
             app:argType="com.ugr.npi.museo.MuseoObject" />
     </fragment>
+    <fragment
+        android:id="@+id/chatbotFragment"
+        android:name="com.ugr.npi.museo.ChatbotFragment"
+        android:label="Chatbot"
+        tools:layout="@layout/fragment_chatbot" />
 </navigation>

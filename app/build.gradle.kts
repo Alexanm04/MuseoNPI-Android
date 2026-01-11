@@ -67,6 +67,9 @@ dependencies {
 
     // ML Kit Barcode Scanning
     implementation(libs.barcode.scanning)
+
+    // Gemini AI
+    implementation(libs.generativeai)
 }
 
 kotlin {

@@ -104,4 +104,14 @@
     <string name="recompensa_canjeada">¡Recompensa canjeada con éxito!</string>
     <string name="puntos_insuficientes">No tienes suficientes puntos.</string>
     <string name="volver">Volver</string>
+
+    <!-- Chatbot -->
+    <string name="chatbot">Chatbot</string>
+    <string name="escribe_mensaje">Escribe un mensaje...</string>
+    <string name="bot_welcome">¡Hola! Soy tu asistente virtual del museo. ¿En qué puedo ayudarte hoy?</string>
+    <string name="bot_hola">¡Hola! ¿Deseas saber el horario, los precios o qué obras ver?</string>
+    <string name="bot_horario">El museo abre de martes a domingo, de 10:00 a 20:00.</string>
+    <string name="bot_precio">La entrada general cuesta 5€. Estudiantes y jubilados tienen un descuento del 50%.</string>
+    <string name="bot_obras">No te pierdas nuestra colección de arte egipcio y la galería de arte contemporáneo.</string>
+    <string name="bot_default">Lo siento, no he entendido tu pregunta. Prueba a preguntarme por el horario, precios o las obras.</string>
 </resources>

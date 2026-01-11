@@ -10,6 +10,11 @@
         android:id="@+id/gamesFragment"
         android:title="@string/juegos"
         android:icon="@drawable/ic_game_controller" />
+    
+    <item
+        android:id="@+id/chatbotFragment"
+        android:title="@string/chatbot"
+        android:icon="@android:drawable/stat_notify_chat" />
 
     <item
         android:id="@+id/mapFragment"
