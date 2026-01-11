@@ -1,7 +1,10 @@
 package com.ugr.npi.museo
 
 import android.os.Bundle
+import android.text.TextUtils
 import android.util.Log
+import android.util.TypedValue
+import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -39,10 +42,11 @@ class ChatbotFragment : Fragment() {
     )
     
     private val chatSession by lazy {
+        val lang = SettingsManager.getLanguage(requireContext()).lowercase()
         generativeModel.startChat(
             history = listOf(
                 content("user") { text(getSystemPrompt()) },
-                content("model") { text("{\"mensaje\": \"Soy Thot, guardián de la sabiduría. ¿Qué deseas conocer sobre nuestro museo?\", \"opciones\": [\"¿Qué salas hay?\", \"¿Quién eres?\"]}") }
+                content("model") { text(getInitialGreetingJson(lang)) }
             )
         )
     }
@@ -70,8 +74,8 @@ class ChatbotFragment : Fragment() {
         recyclerView.adapter = adapter
 
         if (messages.isEmpty()) {
-            val initialJson = "{\"mensaje\": \"Soy Thot, guardián de la sabiduría. ¿Qué deseas conocer sobre nuestro museo?\", \"opciones\": [\"¿Qué salas hay?\", \"¿Quién eres?\"]}"
-            processBotResponse(initialJson)
+            val lang = SettingsManager.getLanguage(requireContext()).lowercase()
+            processBotResponse(getInitialGreetingJson(lang))
         }
 
         btnSend.setOnClickListener {
@@ -80,6 +84,17 @@ class ChatbotFragment : Fragment() {
                 sendMessageToGemini(text)
                 editMessage.text.clear()
             }
+        }
+    }
+
+    private fun getInitialGreetingJson(lang: String): String {
+        // Normalizamos a los primeros 2 caracteres por si viene "en-US", etc.
+        val shortLang = lang.take(2).lowercase()
+        return when (shortLang) {
+            "en" -> "{\"mensaje\": \"I am Thoth, guardian of wisdom. What would you like to know about our museum?\", \"opciones\": [\"What rooms are there?\", \"Who are you?\"]}"
+            "fr" -> "{\"mensaje\": \"Je suis Thot, gardien de la sagesse. Que souhaitez-vous savoir sur notre musée ?\", \"opciones\": [\"Quelles salles y a-t-il ?\", \"Qui es-tu ?\"]}"
+            "pt" -> "{\"mensaje\": \"Sou Thoth, guardião da sabedoria. O que você gostaria de saber sobre nosso museu?\", \"opciones\": [\"Quais salas existem?\", \"Quem é você?\"]}"
+            else -> "{\"mensaje\": \"Soy Thot, guardián de la sabiduría. ¿Qué deseas conocer sobre nuestro museo?\", \"opciones\": [\"¿Qué salas hay?\", \"¿Quién eres?\"]}"
         }
     }
 
@@ -143,8 +158,19 @@ class ChatbotFragment : Fragment() {
         clearOptions()
         val context = context ?: return
         options.take(2).forEach { option ->
-            val button = Button(context).apply {
+            val button = com.google.android.material.button.MaterialButton(context).apply {
                 text = option
+                isAllCaps = false
+                // Permitimos hasta 3 líneas para que crezca en altura si es necesario
+                maxLines = 3
+                ellipsize = TextUtils.TruncateAt.END
+                setTextSize(TypedValue.COMPLEX_UNIT_SP, 12f)
+                
+                // Alineación centrada para que visualmente quede mejor
+                gravity = Gravity.CENTER
+                setPadding(12, 12, 12, 12)
+                
+                // Usamos weight 1.0f para que se repartan el ancho fijo (50% cada uno)
                 layoutParams = LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 1.0f).apply {
                     setMargins(8, 0, 8, 0)
                 }
@@ -198,13 +224,14 @@ class ChatbotFragment : Fragment() {
             - Tienda de regalos: derecha pasada la sala del Río Nilo.
             
             INVENTARIO DE OBRAS EN EL MUSEO:
-            $museumData
+            ${"$"}{museumData}
             
             REGLAS DE RESPUESTA (JSON):
             1. Estructura estricta: { "mensaje": "...", "opciones": [...] }
-            2. 'mensaje': Máximo 50 palabras. Usa los datos del inventario para ser preciso.
-            3. 'opciones': EXACTAMENTE 2 preguntas muy cortas relacionadas con lo que acabas de decir.
-            4. IDIOMA: Responde siempre en ${lang.uppercase()}.
+            2. 'mensaje': Máximo 45 palabras. Usa los datos del inventario para ser preciso.
+            3. 'opciones': EXACTAMENTE 2 preguntas muy cortas relacionadas.
+            4. IMPORTANTE: Si proporcionas información sobre una obra o sala, una de las opciones DEBE ser una variación de "Cuéntame más" o "Saber más" en el idioma ${lang.uppercase()}.
+            5. IDIOMA: Responde siempre en ${lang.uppercase()}.
         """.trimIndent()
     }
 
@@ -219,7 +246,7 @@ class ChatbotFragment : Fragment() {
                 val nombre = obj["nombre_$lang"] ?: "Obra"
                 val detalles = obj["detalles_tecnicos_$lang"] as? List<*>
                 val ubicacion = detalles?.lastOrNull() ?: "Desconocida"
-                "- $nombre (Ubicación: $ubicacion)"
+                "- ${"$"}{nombre} (Ubicación: ${"$"}{ubicacion})"
             }
         } catch (e: Exception) {
             "No hay datos de obras disponibles."
